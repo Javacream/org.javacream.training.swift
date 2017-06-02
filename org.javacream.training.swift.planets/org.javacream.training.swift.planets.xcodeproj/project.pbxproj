@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18C3BBB91E3A381000F74900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3BBB81E3A381000F74900 /* AppDelegate.swift */; };
+		18C3BBBB1E3A381000F74900 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3BBBA1E3A381000F74900 /* RootViewController.swift */; };
+		18C3BBBD1E3A381000F74900 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3BBBC1E3A381000F74900 /* DataViewController.swift */; };
+		18C3BBBF1E3A381000F74900 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3BBBE1E3A381000F74900 /* ModelController.swift */; };
+		18C3BBC21E3A381000F74900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C3BBC01E3A381000F74900 /* Main.storyboard */; };
+		18C3BBC41E3A381000F74900 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C3BBC31E3A381000F74900 /* Assets.xcassets */; };
+		18C3BBC71E3A381000F74900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C3BBC51E3A381000F74900 /* LaunchScreen.storyboard */; };
+		18C3BBD21E3A381000F74900 /* org_javacream_training_swift_planetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3BBD11E3A381000F74900 /* org_javacream_training_swift_planetsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18C3BBCE1E3A381000F74900 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18C3BBAD1E3A381000F74900 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18C3BBB41E3A381000F74900;
+			remoteInfo = org.javacream.training.swift.planets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18C3BBB51E3A381000F74900 /* org.javacream.training.swift.planets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = org.javacream.training.swift.planets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C3BBB81E3A381000F74900 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18C3BBBA1E3A381000F74900 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		18C3BBBC1E3A381000F74900 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		18C3BBBE1E3A381000F74900 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		18C3BBC11E3A381000F74900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18C3BBC31E3A381000F74900 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18C3BBC61E3A381000F74900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18C3BBC81E3A381000F74900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C3BBCD1E3A381000F74900 /* org.javacream.training.swift.planetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = org.javacream.training.swift.planetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C3BBD11E3A381000F74900 /* org_javacream_training_swift_planetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = org_javacream_training_swift_planetsTests.swift; sourceTree = "<group>"; };
+		18C3BBD31E3A381000F74900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18C3BBB21E3A381000F74900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C3BBCA1E3A381000F74900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18C3BBAC1E3A381000F74900 = {
+			isa = PBXGroup;
+			children = (
+				18C3BBB71E3A381000F74900 /* org.javacream.training.swift.planets */,
+				18C3BBD01E3A381000F74900 /* org.javacream.training.swift.planetsTests */,
+				18C3BBB61E3A381000F74900 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18C3BBB61E3A381000F74900 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18C3BBB51E3A381000F74900 /* org.javacream.training.swift.planets.app */,
+				18C3BBCD1E3A381000F74900 /* org.javacream.training.swift.planetsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18C3BBB71E3A381000F74900 /* org.javacream.training.swift.planets */ = {
+			isa = PBXGroup;
+			children = (
+				18C3BBB81E3A381000F74900 /* AppDelegate.swift */,
+				18C3BBBA1E3A381000F74900 /* RootViewController.swift */,
+				18C3BBBC1E3A381000F74900 /* DataViewController.swift */,
+				18C3BBBE1E3A381000F74900 /* ModelController.swift */,
+				18C3BBC01E3A381000F74900 /* Main.storyboard */,
+				18C3BBC31E3A381000F74900 /* Assets.xcassets */,
+				18C3BBC51E3A381000F74900 /* LaunchScreen.storyboard */,
+				18C3BBC81E3A381000F74900 /* Info.plist */,
+			);
+			path = org.javacream.training.swift.planets;
+			sourceTree = "<group>";
+		};
+		18C3BBD01E3A381000F74900 /* org.javacream.training.swift.planetsTests */ = {
+			isa = PBXGroup;
+			children = (
+				18C3BBD11E3A381000F74900 /* org_javacream_training_swift_planetsTests.swift */,
+				18C3BBD31E3A381000F74900 /* Info.plist */,
+			);
+			path = org.javacream.training.swift.planetsTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18C3BBB41E3A381000F74900 /* org.javacream.training.swift.planets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C3BBD61E3A381000F74900 /* Build configuration list for PBXNativeTarget "org.javacream.training.swift.planets" */;
+			buildPhases = (
+				18C3BBB11E3A381000F74900 /* Sources */,
+				18C3BBB21E3A381000F74900 /* Frameworks */,
+				18C3BBB31E3A381000F74900 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = org.javacream.training.swift.planets;
+			productName = org.javacream.training.swift.planets;
+			productReference = 18C3BBB51E3A381000F74900 /* org.javacream.training.swift.planets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18C3BBCC1E3A381000F74900 /* org.javacream.training.swift.planetsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C3BBD91E3A381000F74900 /* Build configuration list for PBXNativeTarget "org.javacream.training.swift.planetsTests" */;
+			buildPhases = (
+				18C3BBC91E3A381000F74900 /* Sources */,
+				18C3BBCA1E3A381000F74900 /* Frameworks */,
+				18C3BBCB1E3A381000F74900 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18C3BBCF1E3A381000F74900 /* PBXTargetDependency */,
+			);
+			name = org.javacream.training.swift.planetsTests;
+			productName = org.javacream.training.swift.planetsTests;
+			productReference = 18C3BBCD1E3A381000F74900 /* org.javacream.training.swift.planetsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18C3BBAD1E3A381000F74900 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Javacream;
+				TargetAttributes = {
+					18C3BBB41E3A381000F74900 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					18C3BBCC1E3A381000F74900 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18C3BBB41E3A381000F74900;
+					};
+				};
+			};
+			buildConfigurationList = 18C3BBB01E3A381000F74900 /* Build configuration list for PBXProject "org.javacream.training.swift.planets" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18C3BBAC1E3A381000F74900;
+			productRefGroup = 18C3BBB61E3A381000F74900 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18C3BBB41E3A381000F74900 /* org.javacream.training.swift.planets */,
+				18C3BBCC1E3A381000F74900 /* org.javacream.training.swift.planetsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18C3BBB31E3A381000F74900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C3BBC71E3A381000F74900 /* LaunchScreen.storyboard in Resources */,
+				18C3BBC41E3A381000F74900 /* Assets.xcassets in Resources */,
+				18C3BBC21E3A381000F74900 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C3BBCB1E3A381000F74900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18C3BBB11E3A381000F74900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C3BBBB1E3A381000F74900 /* RootViewController.swift in Sources */,
+				18C3BBBF1E3A381000F74900 /* ModelController.swift in Sources */,
+				18C3BBBD1E3A381000F74900 /* DataViewController.swift in Sources */,
+				18C3BBB91E3A381000F74900 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C3BBC91E3A381000F74900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C3BBD21E3A381000F74900 /* org_javacream_training_swift_planetsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18C3BBCF1E3A381000F74900 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18C3BBB41E3A381000F74900 /* org.javacream.training.swift.planets */;
+			targetProxy = 18C3BBCE1E3A381000F74900 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18C3BBC01E3A381000F74900 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18C3BBC11E3A381000F74900 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18C3BBC51E3A381000F74900 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18C3BBC61E3A381000F74900 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18C3BBD41E3A381000F74900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18C3BBD51E3A381000F74900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18C3BBD71E3A381000F74900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = org.javacream.training.swift.planets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Javacream.org-javacream-training-swift-planets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		18C3BBD81E3A381000F74900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = org.javacream.training.swift.planets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Javacream.org-javacream-training-swift-planets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		18C3BBDA1E3A381000F74900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = org.javacream.training.swift.planetsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Javacream.org-javacream-training-swift-planetsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/org.javacream.training.swift.planets.app/org.javacream.training.swift.planets";
+			};
+			name = Debug;
+		};
+		18C3BBDB1E3A381000F74900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = org.javacream.training.swift.planetsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Javacream.org-javacream-training-swift-planetsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/org.javacream.training.swift.planets.app/org.javacream.training.swift.planets";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18C3BBB01E3A381000F74900 /* Build configuration list for PBXProject "org.javacream.training.swift.planets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C3BBD41E3A381000F74900 /* Debug */,
+				18C3BBD51E3A381000F74900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18C3BBD61E3A381000F74900 /* Build configuration list for PBXNativeTarget "org.javacream.training.swift.planets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C3BBD71E3A381000F74900 /* Debug */,
+				18C3BBD81E3A381000F74900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18C3BBD91E3A381000F74900 /* Build configuration list for PBXNativeTarget "org.javacream.training.swift.planetsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C3BBDA1E3A381000F74900 /* Debug */,
+				18C3BBDB1E3A381000F74900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18C3BBAD1E3A381000F74900 /* Project object */;
+}

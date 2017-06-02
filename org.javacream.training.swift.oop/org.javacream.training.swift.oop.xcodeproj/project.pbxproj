@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180109731E3894DA003CC2BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180109721E3894DA003CC2BC /* AppDelegate.swift */; };
+		180109751E3894DA003CC2BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180109741E3894DA003CC2BC /* ViewController.swift */; };
+		180109781E3894DA003CC2BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180109761E3894DA003CC2BC /* Main.storyboard */; };
+		1801097A1E3894DA003CC2BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180109791E3894DA003CC2BC /* Assets.xcassets */; };
+		1801097D1E3894DA003CC2BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1801097B1E3894DA003CC2BC /* LaunchScreen.storyboard */; };
+		180109881E3894DA003CC2BC /* org_javacream_training_swift_oopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180109871E3894DA003CC2BC /* org_javacream_training_swift_oopTests.swift */; };
+		180109931E389509003CC2BC /* PeopleOop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180109921E389509003CC2BC /* PeopleOop.swift */; };
+		18C3BBA11E38E7CC00F74900 /* PeopleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3BBA01E38E7CC00F74900 /* PeopleExtensions.swift */; };
+		18C9510B1EE02D9E00560DAB /* Scratch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C9510A1EE02D9E00560DAB /* Scratch.swift */; };
+		18C9510D1EE02FE500560DAB /* SimplePersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C9510C1EE02FE500560DAB /* SimplePersonTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		180109841E3894DA003CC2BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180109671E3894DA003CC2BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1801096E1E3894DA003CC2BC;
+			remoteInfo = org.javacream.training.swift.oop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1801096F1E3894DA003CC2BC /* org.javacream.training.swift.oop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = org.javacream.training.swift.oop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		180109721E3894DA003CC2BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		180109741E3894DA003CC2BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		180109771E3894DA003CC2BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		180109791E3894DA003CC2BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1801097C1E3894DA003CC2BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1801097E1E3894DA003CC2BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180109831E3894DA003CC2BC /* org.javacream.training.swift.oopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = org.javacream.training.swift.oopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		180109871E3894DA003CC2BC /* org_javacream_training_swift_oopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = org_javacream_training_swift_oopTests.swift; sourceTree = "<group>"; };
+		180109891E3894DA003CC2BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180109921E389509003CC2BC /* PeopleOop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleOop.swift; sourceTree = "<group>"; };
+		18C3BBA01E38E7CC00F74900 /* PeopleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleExtensions.swift; sourceTree = "<group>"; };
+		18C9510A1EE02D9E00560DAB /* Scratch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scratch.swift; sourceTree = "<group>"; };
+		18C9510C1EE02FE500560DAB /* SimplePersonTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePersonTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1801096C1E3894DA003CC2BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180109801E3894DA003CC2BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180109661E3894DA003CC2BC = {
+			isa = PBXGroup;
+			children = (
+				180109711E3894DA003CC2BC /* org.javacream.training.swift.oop */,
+				180109861E3894DA003CC2BC /* org.javacream.training.swift.oopTests */,
+				180109701E3894DA003CC2BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		180109701E3894DA003CC2BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1801096F1E3894DA003CC2BC /* org.javacream.training.swift.oop.app */,
+				180109831E3894DA003CC2BC /* org.javacream.training.swift.oopTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180109711E3894DA003CC2BC /* org.javacream.training.swift.oop */ = {
+			isa = PBXGroup;
+			children = (
+				18C9510A1EE02D9E00560DAB /* Scratch.swift */,
+				180109921E389509003CC2BC /* PeopleOop.swift */,
+				18C3BBA01E38E7CC00F74900 /* PeopleExtensions.swift */,
+				180109721E3894DA003CC2BC /* AppDelegate.swift */,
+				180109741E3894DA003CC2BC /* ViewController.swift */,
+				180109761E3894DA003CC2BC /* Main.storyboard */,
+				180109791E3894DA003CC2BC /* Assets.xcassets */,
+				1801097B1E3894DA003CC2BC /* LaunchScreen.storyboard */,
+				1801097E1E3894DA003CC2BC /* Info.plist */,
+			);
+			path = org.javacream.training.swift.oop;
+			sourceTree = "<group>";
+		};
+		180109861E3894DA003CC2BC /* org.javacream.training.swift.oopTests */ = {
+			isa = PBXGroup;
+			children = (
+				18C9510C1EE02FE500560DAB /* SimplePersonTest.swift */,
+				180109871E3894DA003CC2BC /* org_javacream_training_swift_oopTests.swift */,
+				180109891E3894DA003CC2BC /* Info.plist */,
+			);
+			path = org.javacream.training.swift.oopTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1801096E1E3894DA003CC2BC /* org.javacream.training.swift.oop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1801098C1E3894DA003CC2BC /* Build configuration list for PBXNativeTarget "org.javacream.training.swift.oop" */;
+			buildPhases = (
+				1801096B1E3894DA003CC2BC /* Sources */,
+				1801096C1E3894DA003CC2BC /* Frameworks */,
+				1801096D1E3894DA003CC2BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = org.javacream.training.swift.oop;
+			productName = org.javacream.training.swift.oop;
+			productReference = 1801096F1E3894DA003CC2BC /* org.javacream.training.swift.oop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		180109821E3894DA003CC2BC /* org.javacream.training.swift.oopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1801098F1E3894DA003CC2BC /* Build configuration list for PBXNativeTarget "org.javacream.training.swift.oopTests" */;
+			buildPhases = (
+				1801097F1E3894DA003CC2BC /* Sources */,
+				180109801E3894DA003CC2BC /* Frameworks */,
+				180109811E3894DA003CC2BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180109851E3894DA003CC2BC /* PBXTargetDependency */,
+			);
+			name = org.javacream.training.swift.oopTests;
+			productName = org.javacream.training.swift.oopTests;
+			productReference = 180109831E3894DA003CC2BC /* org.javacream.training.swift.oopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		180109671E3894DA003CC2BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Javacream;
+				TargetAttributes = {
+					1801096E1E3894DA003CC2BC = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					180109821E3894DA003CC2BC = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1801096E1E3894DA003CC2BC;
+					};
+				};
+			};
+			buildConfigurationList = 1801096A1E3894DA003CC2BC /* Build configuration list for PBXProject "org.javacream.training.swift.oop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 180109661E3894DA003CC2BC;
+			productRefGroup = 180109701E3894DA003CC2BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1801096E1E3894DA003CC2BC /* org.javacream.training.swift.oop */,
+				180109821E3894DA003CC2BC /* org.javacream.training.swift.oopTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1801096D1E3894DA003CC2BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1801097D1E3894DA003CC2BC /* LaunchScreen.storyboard in Resources */,
+				1801097A1E3894DA003CC2BC /* Assets.xcassets in Resources */,
+				180109781E3894DA003CC2BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180109811E3894DA003CC2BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1801096B1E3894DA003CC2BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C9510B1EE02D9E00560DAB /* Scratch.swift in Sources */,
+				180109931E389509003CC2BC /* PeopleOop.swift in Sources */,
+				180109751E3894DA003CC2BC /* ViewController.swift in Sources */,
+				18C3BBA11E38E7CC00F74900 /* PeopleExtensions.swift in Sources */,
+				180109731E3894DA003CC2BC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1801097F1E3894DA003CC2BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C9510D1EE02FE500560DAB /* SimplePersonTest.swift in Sources */,
+				180109881E3894DA003CC2BC /* org_javacream_training_swift_oopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		180109851E3894DA003CC2BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1801096E1E3894DA003CC2BC /* org.javacream.training.swift.oop */;
+			targetProxy = 180109841E3894DA003CC2BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		180109761E3894DA003CC2BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180109771E3894DA003CC2BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1801097B1E3894DA003CC2BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1801097C1E3894DA003CC2BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1801098A1E3894DA003CC2BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1801098B1E3894DA003CC2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1801098D1E3894DA003CC2BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = org.javacream.training.swift.oop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Javacream.org-javacream-training-swift-oop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1801098E1E3894DA003CC2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = org.javacream.training.swift.oop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Javacream.org-javacream-training-swift-oop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		180109901E3894DA003CC2BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = org.javacream.training.swift.oopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Javacream.org-javacream-training-swift-oopTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/org.javacream.training.swift.oop.app/org.javacream.training.swift.oop";
+			};
+			name = Debug;
+		};
+		180109911E3894DA003CC2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = org.javacream.training.swift.oopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Javacream.org-javacream-training-swift-oopTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/org.javacream.training.swift.oop.app/org.javacream.training.swift.oop";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1801096A1E3894DA003CC2BC /* Build configuration list for PBXProject "org.javacream.training.swift.oop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1801098A1E3894DA003CC2BC /* Debug */,
+				1801098B1E3894DA003CC2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1801098C1E3894DA003CC2BC /* Build configuration list for PBXNativeTarget "org.javacream.training.swift.oop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1801098D1E3894DA003CC2BC /* Debug */,
+				1801098E1E3894DA003CC2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1801098F1E3894DA003CC2BC /* Build configuration list for PBXNativeTarget "org.javacream.training.swift.oopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180109901E3894DA003CC2BC /* Debug */,
+				180109911E3894DA003CC2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 180109671E3894DA003CC2BC /* Project object */;
+}

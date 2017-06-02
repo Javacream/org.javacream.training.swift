@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Given Name:"; ObjectID = "8md-Hg-7Fm"; */
+"8md-Hg-7Fm.text" = "Given Name:";
+
+/* Class = "UILabel"; text = "Lastname:"; ObjectID = "AND-TA-a5I"; */
+"AND-TA-a5I.text" = "Lastname:";
+
+/* Class = "UILabel"; text = "PEOPLE"; ObjectID = "YI1-Lb-ghh"; */
+"YI1-Lb-ghh.text" = "PEOPLE";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "uv4-Ln-9fn"; */
+"uv4-Ln-9fn.normalTitle" = "Save";
