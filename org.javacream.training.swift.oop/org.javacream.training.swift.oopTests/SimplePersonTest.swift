@@ -25,6 +25,7 @@ class SimplePersonTest: XCTestCase {
         XCTAssertEqual("Brezner", p1.Lastname)
         XCTAssertEqual("Berlin", p1.address?.city)
         XCTAssertEqual("München", p2.address?.city)
+        
     }
     
     

@@ -135,7 +135,12 @@ class PeopleController{
     }
     
     func findByLastname(lastname: String) -> Array<Person>{
-        return people.filter({$0.Lastname == lastname})
+        return people.filter({(element:Person) -> Bool in
+            return element.Lastname == lastname
+        })
+        //return people.filter({(element) in return element.Lastname == lastname})
+        //return people.filter({(element) in element.Lastname == lastname})
+        //return people.filter({$0.Lastname == lastname})
     }
 }
 

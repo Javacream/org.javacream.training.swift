@@ -58,7 +58,7 @@ func + (left: Person, right: Person){
     left.marry(right)
 }
 
-infix operator ❤ {associativity left precedence 200}
+infix operator ❤ : AdditionPrecedence
 
 func ❤ (left: Person, right: Person) -> Person{
     left.marry(right)
