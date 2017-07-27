@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E4498921F28C68B0030501B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4498911F28C68B0030501B /* AppDelegate.swift */; };
+		2E4498941F28C68B0030501B /* CreatePersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4498931F28C68B0030501B /* CreatePersonViewController.swift */; };
+		2E4498961F28C68B0030501B /* FindPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4498951F28C68B0030501B /* FindPersonViewController.swift */; };
+		2E4498991F28C68B0030501B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4498971F28C68B0030501B /* Main.storyboard */; };
+		2E44989B1F28C68B0030501B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E44989A1F28C68B0030501B /* Assets.xcassets */; };
+		2E44989E1F28C68B0030501B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E44989C1F28C68B0030501B /* LaunchScreen.storyboard */; };
+		2E4498A91F28C68C0030501B /* org_javacream_training_ios_people_complexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4498A81F28C68C0030501B /* org_javacream_training_ios_people_complexTests.swift */; };
+		2E4498B41F28C68C0030501B /* org_javacream_training_ios_people_complexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4498B31F28C68C0030501B /* org_javacream_training_ios_people_complexUITests.swift */; };
+		2E4498C21F28C7F40030501B /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4498C11F28C7F40030501B /* PeopleListViewController.swift */; };
+		2E4498C41F28C8630030501B /* PeopleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4498C31F28C8630030501B /* PeopleController.swift */; };
+		2E4498C61F28C8710030501B /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4498C51F28C8710030501B /* PeopleModel.swift */; };
+		2E4498C91F28C8E20030501B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4498C71F28C8E20030501B /* Person.swift */; };
+		2E4498CA1F28C8E20030501B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4498C81F28C8E20030501B /* Utilities.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E4498A51F28C68C0030501B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E4498861F28C68B0030501B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E44988D1F28C68B0030501B;
+			remoteInfo = org.javacream.training.ios.people.complex;
+		};
+		2E4498B01F28C68C0030501B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E4498861F28C68B0030501B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E44988D1F28C68B0030501B;
+			remoteInfo = org.javacream.training.ios.people.complex;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E44988E1F28C68B0030501B /* org.javacream.training.ios.people.complex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = org.javacream.training.ios.people.complex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E4498911F28C68B0030501B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E4498931F28C68B0030501B /* CreatePersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePersonViewController.swift; sourceTree = "<group>"; };
+		2E4498951F28C68B0030501B /* FindPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPersonViewController.swift; sourceTree = "<group>"; };
+		2E4498981F28C68B0030501B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E44989A1F28C68B0030501B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E44989D1F28C68B0030501B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E44989F1F28C68B0030501B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E4498A41F28C68C0030501B /* org.javacream.training.ios.people.complexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = org.javacream.training.ios.people.complexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E4498A81F28C68C0030501B /* org_javacream_training_ios_people_complexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = org_javacream_training_ios_people_complexTests.swift; sourceTree = "<group>"; };
+		2E4498AA1F28C68C0030501B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E4498AF1F28C68C0030501B /* org.javacream.training.ios.people.complexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = org.javacream.training.ios.people.complexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E4498B31F28C68C0030501B /* org_javacream_training_ios_people_complexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = org_javacream_training_ios_people_complexUITests.swift; sourceTree = "<group>"; };
+		2E4498B51F28C68C0030501B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E4498C11F28C7F40030501B /* PeopleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListViewController.swift; sourceTree = "<group>"; };
+		2E4498C31F28C8630030501B /* PeopleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleController.swift; sourceTree = "<group>"; };
+		2E4498C51F28C8710030501B /* PeopleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
+		2E4498C71F28C8E20030501B /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		2E4498C81F28C8E20030501B /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E44988B1F28C68B0030501B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E4498A11F28C68C0030501B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E4498AC1F28C68C0030501B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E4498851F28C68B0030501B = {
+			isa = PBXGroup;
+			children = (
+				2E4498901F28C68B0030501B /* org.javacream.training.ios.people.complex */,
+				2E4498A71F28C68C0030501B /* org.javacream.training.ios.people.complexTests */,
+				2E4498B21F28C68C0030501B /* org.javacream.training.ios.people.complexUITests */,
+				2E44988F1F28C68B0030501B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E44988F1F28C68B0030501B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E44988E1F28C68B0030501B /* org.javacream.training.ios.people.complex.app */,
+				2E4498A41F28C68C0030501B /* org.javacream.training.ios.people.complexTests.xctest */,
+				2E4498AF1F28C68C0030501B /* org.javacream.training.ios.people.complexUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E4498901F28C68B0030501B /* org.javacream.training.ios.people.complex */ = {
+			isa = PBXGroup;
+			children = (
+				2E4498C71F28C8E20030501B /* Person.swift */,
+				2E4498C81F28C8E20030501B /* Utilities.swift */,
+				2E4498C51F28C8710030501B /* PeopleModel.swift */,
+				2E4498911F28C68B0030501B /* AppDelegate.swift */,
+				2E4498931F28C68B0030501B /* CreatePersonViewController.swift */,
+				2E4498951F28C68B0030501B /* FindPersonViewController.swift */,
+				2E4498C11F28C7F40030501B /* PeopleListViewController.swift */,
+				2E4498971F28C68B0030501B /* Main.storyboard */,
+				2E4498C31F28C8630030501B /* PeopleController.swift */,
+				2E44989A1F28C68B0030501B /* Assets.xcassets */,
+				2E44989C1F28C68B0030501B /* LaunchScreen.storyboard */,
+				2E44989F1F28C68B0030501B /* Info.plist */,
+			);
+			path = org.javacream.training.ios.people.complex;
+			sourceTree = "<group>";
+		};
+		2E4498A71F28C68C0030501B /* org.javacream.training.ios.people.complexTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E4498A81F28C68C0030501B /* org_javacream_training_ios_people_complexTests.swift */,
+				2E4498AA1F28C68C0030501B /* Info.plist */,
+			);
+			path = org.javacream.training.ios.people.complexTests;
+			sourceTree = "<group>";
+		};
+		2E4498B21F28C68C0030501B /* org.javacream.training.ios.people.complexUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E4498B31F28C68C0030501B /* org_javacream_training_ios_people_complexUITests.swift */,
+				2E4498B51F28C68C0030501B /* Info.plist */,
+			);
+			path = org.javacream.training.ios.people.complexUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E44988D1F28C68B0030501B /* org.javacream.training.ios.people.complex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E4498B81F28C68C0030501B /* Build configuration list for PBXNativeTarget "org.javacream.training.ios.people.complex" */;
+			buildPhases = (
+				2E44988A1F28C68B0030501B /* Sources */,
+				2E44988B1F28C68B0030501B /* Frameworks */,
+				2E44988C1F28C68B0030501B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = org.javacream.training.ios.people.complex;
+			productName = org.javacream.training.ios.people.complex;
+			productReference = 2E44988E1F28C68B0030501B /* org.javacream.training.ios.people.complex.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E4498A31F28C68C0030501B /* org.javacream.training.ios.people.complexTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E4498BB1F28C68C0030501B /* Build configuration list for PBXNativeTarget "org.javacream.training.ios.people.complexTests" */;
+			buildPhases = (
+				2E4498A01F28C68C0030501B /* Sources */,
+				2E4498A11F28C68C0030501B /* Frameworks */,
+				2E4498A21F28C68C0030501B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E4498A61F28C68C0030501B /* PBXTargetDependency */,
+			);
+			name = org.javacream.training.ios.people.complexTests;
+			productName = org.javacream.training.ios.people.complexTests;
+			productReference = 2E4498A41F28C68C0030501B /* org.javacream.training.ios.people.complexTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E4498AE1F28C68C0030501B /* org.javacream.training.ios.people.complexUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E4498BE1F28C68C0030501B /* Build configuration list for PBXNativeTarget "org.javacream.training.ios.people.complexUITests" */;
+			buildPhases = (
+				2E4498AB1F28C68C0030501B /* Sources */,
+				2E4498AC1F28C68C0030501B /* Frameworks */,
+				2E4498AD1F28C68C0030501B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E4498B11F28C68C0030501B /* PBXTargetDependency */,
+			);
+			name = org.javacream.training.ios.people.complexUITests;
+			productName = org.javacream.training.ios.people.complexUITests;
+			productReference = 2E4498AF1F28C68C0030501B /* org.javacream.training.ios.people.complexUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E4498861F28C68B0030501B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Javacream;
+				TargetAttributes = {
+					2E44988D1F28C68B0030501B = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					2E4498A31F28C68C0030501B = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2E44988D1F28C68B0030501B;
+					};
+					2E4498AE1F28C68C0030501B = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2E44988D1F28C68B0030501B;
+					};
+				};
+			};
+			buildConfigurationList = 2E4498891F28C68B0030501B /* Build configuration list for PBXProject "org.javacream.training.ios.people.complex" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E4498851F28C68B0030501B;
+			productRefGroup = 2E44988F1F28C68B0030501B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E44988D1F28C68B0030501B /* org.javacream.training.ios.people.complex */,
+				2E4498A31F28C68C0030501B /* org.javacream.training.ios.people.complexTests */,
+				2E4498AE1F28C68C0030501B /* org.javacream.training.ios.people.complexUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E44988C1F28C68B0030501B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E44989E1F28C68B0030501B /* LaunchScreen.storyboard in Resources */,
+				2E44989B1F28C68B0030501B /* Assets.xcassets in Resources */,
+				2E4498991F28C68B0030501B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E4498A21F28C68C0030501B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E4498AD1F28C68C0030501B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E44988A1F28C68B0030501B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E4498961F28C68B0030501B /* FindPersonViewController.swift in Sources */,
+				2E4498C41F28C8630030501B /* PeopleController.swift in Sources */,
+				2E4498C21F28C7F40030501B /* PeopleListViewController.swift in Sources */,
+				2E4498921F28C68B0030501B /* AppDelegate.swift in Sources */,
+				2E4498C91F28C8E20030501B /* Person.swift in Sources */,
+				2E4498C61F28C8710030501B /* PeopleModel.swift in Sources */,
+				2E4498CA1F28C8E20030501B /* Utilities.swift in Sources */,
+				2E4498941F28C68B0030501B /* CreatePersonViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E4498A01F28C68C0030501B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E4498A91F28C68C0030501B /* org_javacream_training_ios_people_complexTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E4498AB1F28C68C0030501B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E4498B41F28C68C0030501B /* org_javacream_training_ios_people_complexUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E4498A61F28C68C0030501B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E44988D1F28C68B0030501B /* org.javacream.training.ios.people.complex */;
+			targetProxy = 2E4498A51F28C68C0030501B /* PBXContainerItemProxy */;
+		};
+		2E4498B11F28C68C0030501B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E44988D1F28C68B0030501B /* org.javacream.training.ios.people.complex */;
+			targetProxy = 2E4498B01F28C68C0030501B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E4498971F28C68B0030501B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E4498981F28C68B0030501B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E44989C1F28C68B0030501B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E44989D1F28C68B0030501B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E4498B61F28C68C0030501B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E4498B71F28C68C0030501B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E4498B91F28C68C0030501B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = org.javacream.training.ios.people.complex/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.javacream.org-javacream-training-ios-people-complex";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2E4498BA1F28C68C0030501B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = org.javacream.training.ios.people.complex/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.javacream.org-javacream-training-ios-people-complex";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2E4498BC1F28C68C0030501B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = org.javacream.training.ios.people.complexTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.javacream.org-javacream-training-ios-people-complexTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/org.javacream.training.ios.people.complex.app/org.javacream.training.ios.people.complex";
+			};
+			name = Debug;
+		};
+		2E4498BD1F28C68C0030501B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = org.javacream.training.ios.people.complexTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.javacream.org-javacream-training-ios-people-complexTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/org.javacream.training.ios.people.complex.app/org.javacream.training.ios.people.complex";
+			};
+			name = Release;
+		};
+		2E4498BF1F28C68C0030501B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = org.javacream.training.ios.people.complexUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.javacream.org-javacream-training-ios-people-complexUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = org.javacream.training.ios.people.complex;
+			};
+			name = Debug;
+		};
+		2E4498C01F28C68C0030501B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = org.javacream.training.ios.people.complexUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.javacream.org-javacream-training-ios-people-complexUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = org.javacream.training.ios.people.complex;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E4498891F28C68B0030501B /* Build configuration list for PBXProject "org.javacream.training.ios.people.complex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E4498B61F28C68C0030501B /* Debug */,
+				2E4498B71F28C68C0030501B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E4498B81F28C68C0030501B /* Build configuration list for PBXNativeTarget "org.javacream.training.ios.people.complex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E4498B91F28C68C0030501B /* Debug */,
+				2E4498BA1F28C68C0030501B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2E4498BB1F28C68C0030501B /* Build configuration list for PBXNativeTarget "org.javacream.training.ios.people.complexTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E4498BC1F28C68C0030501B /* Debug */,
+				2E4498BD1F28C68C0030501B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2E4498BE1F28C68C0030501B /* Build configuration list for PBXNativeTarget "org.javacream.training.ios.people.complexUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E4498BF1F28C68C0030501B /* Debug */,
+				2E4498C01F28C68C0030501B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E4498861F28C68B0030501B /* Project object */;
+}

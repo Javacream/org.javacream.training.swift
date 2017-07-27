@@ -67,6 +67,7 @@
 		18AB03391E3640720063AD1B /* org.javacream.training.ios.people.swift */ = {
 			isa = PBXGroup;
 			children = (
+				18C3BBA81E3A009600F74900 /* Utilities.swift */,
 				18C3BBAA1E3A120600F74900 /* HttpPeopleController.swift */,
 				18C3BBA61E39F1AE00F74900 /* LongRunningPeopleModel.swift */,
 				18C3BBA41E39ED2F00F74900 /* Person.swift */,
@@ -77,7 +78,6 @@
 				18AB03411E3640720063AD1B /* Assets.xcassets */,
 				18AB03431E3640720063AD1B /* LaunchScreen.storyboard */,
 				18AB03461E3640720063AD1B /* Info.plist */,
-				18C3BBA81E3A009600F74900 /* Utilities.swift */,
 			);
 			path = org.javacream.training.ios.people.swift;
 			sourceTree = "<group>";

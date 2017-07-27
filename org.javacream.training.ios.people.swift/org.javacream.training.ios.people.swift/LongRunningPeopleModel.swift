@@ -14,7 +14,7 @@ class LongRunningPeopleModel{
     func add(lastname: String, givenName: String){
         let newPerson = Person(lastname: lastname, givenName: givenName)
         people.append(newPerson)
-        //sleep(5)
+        sleep(5)
     }
     
     func addAsync(lastname: String, givenName: String, update: @escaping ()->Void){

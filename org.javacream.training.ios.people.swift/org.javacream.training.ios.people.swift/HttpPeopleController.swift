@@ -11,7 +11,7 @@ import Foundation
 class HttpPeopleController{
     func load() -> Array<(String, String)>{
         var result = Array<(String, String)>()
-        if let url = URL(string: "http://10.28.6.8:8080/training/data/people.json") {
+        if let url = URL(string: "http://10.16.2.226:8080/training/data/people.json") {
             do {
                 sleep(2)
                 let contents = try String(contentsOf: url)
