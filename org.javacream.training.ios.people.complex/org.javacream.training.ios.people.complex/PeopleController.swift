@@ -22,14 +22,23 @@ class PeopleController{
     
     func add(lastname: String, givenName: String, update: @escaping (Person) -> Void){
         
-        {() -> Person in
-            self.peopleModel.add(lastname: lastname, givenName: givenName);
-            } ->- {(newPerson) -> Void in
-                update(newPerson)
+
+	//Funktionsliteral in Swift
+
+	func callBackground() -> Person {
+            return self.peopleModel.add(lastname: lastname, givenName: givenName);
         }
+
+	func callUpdate(newPerson:Person) -> Void {
+            update(newPerson)
+        }
+
+
+         callBackground ->- callUpdate 
     }
     
     func findAll(update: @escaping (Array<Person>) -> Void) {
+        
     {() -> Array<Person> in
         self.peopleModel.findAll();
         } ->- {(people) -> Void in
@@ -71,7 +80,7 @@ class PeopleController{
 
     func loadPeopleFromServer() -> Array<Person>{
         var result = Array<Person>()
-        if let url = URL(string: "http://10.16.2.226:8080/training/data/people.json") {
+        if let url = URL(string: "http://10.237.50.206:9090/training/data/people.json") {
             do {
                 sleep(2)
                 let contents = try String(contentsOf: url)
@@ -100,7 +109,7 @@ class PeopleController{
         let people = peopleModel.findAll()
         let peopleJson = people.map({$0.jsonRepresentation})
         let path = documentsPath.absoluteString! + "/people.json"
-        var data = Data()
+        let data = Data()
         //data.append(contentsOf: peopleJson.description)
         FileManager.default.createFile(atPath: path, contents: data, attributes: nil)
         // Set the contents
