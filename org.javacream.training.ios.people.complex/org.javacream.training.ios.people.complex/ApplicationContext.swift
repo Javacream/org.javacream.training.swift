@@ -11,6 +11,6 @@ import Foundation
 class ApplicationContext{
     static let peopleModel = PeopleModel()
     static let applicationController = ApplicationController()
-    
+    static let peopleRestClient = PeopleRestClient()
     
 }
