@@ -43,7 +43,8 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func doVarsAndArgs(_ sender: UIButton) {
+
+    @IBAction func doVarsAndTypes(_ sender: UIButton) {
         varsAndTypes()
     }
     override func viewDidLoad() {

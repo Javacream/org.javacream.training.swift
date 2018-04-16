@@ -9,39 +9,23 @@
 import Foundation
 
 func varsAndTypes(){
+    //var <name> = Literal //Variable
+    var name = "Sawitzki" //Type Inference: type of name = type of literal
+    name = "Mustermann"
     
-    //var <name> = Literal-Wert
+    let name2 = "Hugo"
+    //name2 = "Emil" //Compiler error, let = const
     
-    let name = "Sawitzki" //Die Variable name ist eine Referenz auf ein Objekt vom Typ String
-    print ("Name: " + name)
-
-    var name2 :String? = "Sawitzki"
-    print(name2!)
+    //name = 42 //Compiler error: name is String, not Int! Swift is STATICALLY TYPED
+    let number: Int = 42 //Type annotation may be present
     
-    let name4 = name2! as String
-    print (name4)
-    var height = 183
-
-    let name3 = "Rainer"
-    print(name3)
-    name2 = nil
+    let realNumber = 47.11
+    let state = true //or false
     
-
-    if let x = name2 {
-        print (x)
-    }
+    //String interpolation
     
-    height = 181
-    print(height)
-    
-    let list : Array<String> = ["A", "B"]
-    let dict: Dictionary<Int, String> = [81373: "München", 77123: "Stuttgart"]
-    
-    print(list)
-    print(dict)
-    
-    let range = 1...9
-
-    print(range)
-    
+    print("name: \(name), name2: \(name2), number: \(number), realNumber: \(realNumber), state: \(state) ")
 }
+
+
+
