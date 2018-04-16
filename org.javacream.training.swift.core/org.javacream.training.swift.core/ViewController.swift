@@ -46,6 +46,8 @@ class ViewController: UIViewController {
 
     @IBAction func doVarsAndTypes(_ sender: UIButton) {
         varsAndTypes()
+        optionals()
+        complexTypes()
     }
     override func viewDidLoad() {
         super.viewDidLoad()

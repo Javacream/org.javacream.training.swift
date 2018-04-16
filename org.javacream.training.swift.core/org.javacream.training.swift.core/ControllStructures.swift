@@ -19,8 +19,8 @@ func loops(){
         print(element)
     }
     
-    let range = 1...2
-    for element in range.reversed() {
+    let range = 1...5
+    for element in range {
         print(element)
     }
     
@@ -29,15 +29,15 @@ func loops(){
 
 func decisions(){
     var condition =  (5%2 == 0)
-    
-
     if (condition) {
         print ("condition was true")
     } else {
         print ("condition was false")
     }
     condition = true
+
     let name = "Sawitzki"
+
     switch name {
     case "Sawitzki":
         print ("it was Sawitzki")
