@@ -46,12 +46,12 @@ func transformerExample(){
         print("no reverse transformation available")
     }
     
-    transformer["reverse"] = {(string) in return String(string.characters.reversed())}
+    transformer["reverse"] = {(string) in return String(string.reversed())}
     
     print(transformer["reverse"]!(input))
 
     let var1 = "Sawitzki"
-    let var2: (String)->String = {(string) in return String(string.characters.reversed())}
+    let var2: (String)->String = {(string) in return String(string.reversed())}
 
     print(var1)
     print(var2("Hugo"))
