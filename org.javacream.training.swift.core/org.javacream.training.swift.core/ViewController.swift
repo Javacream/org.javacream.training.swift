@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func helloWorld(_ sender: Any) {
+        print("Hello World!")
+    }
     @IBAction func doFunctions(_ sender: Any) {
         functions()
     }
