@@ -11,6 +11,7 @@ import Foundation
 func controllStructures(){
     loops()
     decisions()
+    postalCodesFromCity()
 }
 
 func loops(){
@@ -23,6 +24,7 @@ func loops(){
     for element in range {
         print(element)
     }
+    
     
     
 }
