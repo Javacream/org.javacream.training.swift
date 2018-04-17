@@ -18,19 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0i1-Ig-fRT">
-                                <rect key="frame" x="152" y="20" width="125" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0i1-Ig-fRT">
+                                <rect key="frame" x="125" y="20" width="125" height="30"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DE8-eD-B9B">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DE8-eD-B9B">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cAs-9e-u5d">
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cAs-9e-u5d">
                                                 <rect key="frame" x="0.0" y="0.0" width="25" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2O-n9-2QO">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2O-n9-2QO">
                                                 <rect key="frame" x="25" y="0.0" width="100" height="30"/>
                                                 <state key="normal" title="Calculate Area"/>
                                                 <connections>
@@ -41,12 +41,29 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="DE8-eD-B9B" firstAttribute="centerX" secondItem="0i1-Ig-fRT" secondAttribute="centerX" id="17f-eU-rRQ"/>
-                                    <constraint firstItem="DE8-eD-B9B" firstAttribute="centerY" secondItem="0i1-Ig-fRT" secondAttribute="centerY" id="9yb-vs-Xiu"/>
+                                    <constraint firstItem="DE8-eD-B9B" firstAttribute="centerY" secondItem="0i1-Ig-fRT" secondAttribute="centerY" id="WO8-Kp-b2D"/>
+                                    <constraint firstItem="DE8-eD-B9B" firstAttribute="centerX" secondItem="0i1-Ig-fRT" secondAttribute="centerX" id="dVI-4t-lAg"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fth-oy-E8F">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tI-Ao-98P">
+                                <rect key="frame" x="140" y="58" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="CalculateSum"/>
+                                <connections>
+                                    <action selector="doCalculateSum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PiI-ph-wmO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlB-bA-0dn">
+                                <rect key="frame" x="127" y="108" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="CalculateAverage"/>
+                                <connections>
+                                    <action selector="doCalculateAverage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T6w-vk-ZKL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fth-oy-E8F">
                                 <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -54,10 +71,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="fth-oy-E8F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UxR-Te-Uy2"/>
-                            <constraint firstItem="fth-oy-E8F" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hs1-OK-01j"/>
-                            <constraint firstItem="0i1-Ig-fRT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="r8s-vI-O29"/>
-                            <constraint firstItem="0i1-Ig-fRT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vUB-Tf-NO6"/>
+                            <constraint firstItem="0i1-Ig-fRT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9uz-VX-8yU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
