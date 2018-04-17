@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aVh-ob-hEn">
-                                <rect key="frame" x="118" y="198" width="138" height="270"/>
+                                <rect key="frame" x="118" y="183" width="138" height="300"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXr-04-QrW">
                                         <rect key="frame" x="29" y="0.0" width="80" height="30"/>
@@ -52,36 +52,43 @@
                                             <action selector="doControllStructures:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oyx-jz-22m"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvb-NR-gmi">
+                                        <rect key="frame" x="11.5" y="120" width="115" height="30"/>
+                                        <state key="normal" title="Type Conversion"/>
+                                        <connections>
+                                            <action selector="doTypeConversion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RFL-6d-QLM"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oF-dN-Ti8">
-                                        <rect key="frame" x="35" y="120" width="68" height="30"/>
+                                        <rect key="frame" x="35" y="150" width="68" height="30"/>
                                         <state key="normal" title="Functions"/>
                                         <connections>
                                             <action selector="doFunctions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="joe-tA-E7I"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMf-uJ-NZR">
-                                        <rect key="frame" x="0.0" y="150" width="138" height="30"/>
+                                        <rect key="frame" x="0.0" y="180" width="138" height="30"/>
                                         <state key="normal" title="ReferencesAndValues"/>
                                         <connections>
                                             <action selector="doReferencesAndValues:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ykA-Yc-0j7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4d-ub-u8t">
-                                        <rect key="frame" x="0.0" y="180" width="138" height="30"/>
+                                        <rect key="frame" x="0.0" y="210" width="138" height="30"/>
                                         <state key="normal" title="Functions As Objects"/>
                                         <connections>
                                             <action selector="doFunctionsAsObjects:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SeI-Mq-rc9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nJ-4u-aMU">
-                                        <rect key="frame" x="0.0" y="210" width="138" height="30"/>
+                                        <rect key="frame" x="0.0" y="240" width="138" height="30"/>
                                         <state key="normal" title="Transformer Example"/>
                                         <connections>
                                             <action selector="doTransformerExample:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yUa-Df-1OW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52a-7M-Afb">
-                                        <rect key="frame" x="38.5" y="240" width="61" height="30"/>
+                                        <rect key="frame" x="38.5" y="270" width="61" height="30"/>
                                         <state key="normal" title="Closures"/>
                                         <connections>
                                             <action selector="doClosures:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dhs-MX-tqp"/>

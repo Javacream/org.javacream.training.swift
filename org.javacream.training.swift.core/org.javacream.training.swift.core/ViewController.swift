@@ -17,7 +17,9 @@ class ViewController: UIViewController {
         functions()
     }
 
-
+    @IBAction func doTypeConversion(_ sender: Any) {
+        typeConversion()
+    }
     @IBAction func doOperatorsDemo(_ sender: Any) {
         operators()
 

@@ -21,6 +21,7 @@
 		18AB03671E37446F0063AD1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AB03651E37446F0063AD1B /* LaunchScreen.storyboard */; };
 		18AB036F1E37453C0063AD1B /* VarsAndTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB036E1E37453C0063AD1B /* VarsAndTypes.swift */; };
 		841540C82084E2CF007EE197 /* PostalCodesSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841540C72084E2CF007EE197 /* PostalCodesSample.swift */; };
+		841540CA2085DB02007EE197 /* TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841540C92085DB02007EE197 /* TypeConversion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		18AB03681E37446F0063AD1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18AB036E1E37453C0063AD1B /* VarsAndTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarsAndTypes.swift; sourceTree = "<group>"; };
 		841540C72084E2CF007EE197 /* PostalCodesSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalCodesSample.swift; sourceTree = "<group>"; };
+		841540C92085DB02007EE197 /* TypeConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeConversion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		18AB035B1E37446F0063AD1B /* org.javacream.training.swift.core */ = {
 			isa = PBXGroup;
 			children = (
+				841540C92085DB02007EE197 /* TypeConversion.swift */,
 				841540C72084E2CF007EE197 /* PostalCodesSample.swift */,
 				180109641E379A19003CC2BC /* Closures.swift */,
 				180109621E378813003CC2BC /* Transformer.swift */,
@@ -173,6 +176,7 @@
 				18AB035D1E37446F0063AD1B /* AppDelegate.swift in Sources */,
 				18AB036F1E37453C0063AD1B /* VarsAndTypes.swift in Sources */,
 				18A5C0241E375E22008FD753 /* ControllStructures.swift in Sources */,
+				841540CA2085DB02007EE197 /* TypeConversion.swift in Sources */,
 				841540C82084E2CF007EE197 /* PostalCodesSample.swift in Sources */,
 				1801095D1E376521003CC2BC /* Functions.swift in Sources */,
 			);
