@@ -22,6 +22,7 @@
 		18AB036F1E37453C0063AD1B /* VarsAndTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB036E1E37453C0063AD1B /* VarsAndTypes.swift */; };
 		841540C82084E2CF007EE197 /* PostalCodesSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841540C72084E2CF007EE197 /* PostalCodesSample.swift */; };
 		841540CA2085DB02007EE197 /* TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841540C92085DB02007EE197 /* TypeConversion.swift */; };
+		841540CC2085FA54007EE197 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841540CB2085FA54007EE197 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		18AB036E1E37453C0063AD1B /* VarsAndTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarsAndTypes.swift; sourceTree = "<group>"; };
 		841540C72084E2CF007EE197 /* PostalCodesSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalCodesSample.swift; sourceTree = "<group>"; };
 		841540C92085DB02007EE197 /* TypeConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeConversion.swift; sourceTree = "<group>"; };
+		841540CB2085FA54007EE197 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		18AB035B1E37446F0063AD1B /* org.javacream.training.swift.core */ = {
 			isa = PBXGroup;
 			children = (
+				841540CB2085FA54007EE197 /* Calculator.swift */,
 				841540C92085DB02007EE197 /* TypeConversion.swift */,
 				841540C72084E2CF007EE197 /* PostalCodesSample.swift */,
 				180109641E379A19003CC2BC /* Closures.swift */,
@@ -172,6 +175,7 @@
 				1801095B1E376305003CC2BC /* ViewController.swift in Sources */,
 				18A5C0221E375BD4008FD753 /* Operators.swift in Sources */,
 				180109651E379A19003CC2BC /* Closures.swift in Sources */,
+				841540CC2085FA54007EE197 /* Calculator.swift in Sources */,
 				1801095F1E3778F2003CC2BC /* ReferencesAndValues.swift in Sources */,
 				18AB035D1E37446F0063AD1B /* AppDelegate.swift in Sources */,
 				18AB036F1E37453C0063AD1B /* VarsAndTypes.swift in Sources */,

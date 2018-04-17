@@ -20,6 +20,7 @@ func functions(){
     print(result2)
     let result3 = functionWithAnonymousParameters("Hello", namesList, 42)
     print(result3)
+
 }
 
 func parameterlessVoidFunction(){
@@ -61,6 +62,5 @@ func functionWithAnonymousParameters(_ description: String, _ pList: Array<Strin
     return "OK"
     
 }
-
 
 
