@@ -10,14 +10,16 @@ import Foundation
 
 
 func functions(){
+    //let message = "Demo"
     parameterlessVoidFunction()
     let result = parameterlessStringFunction()
     print (result)
-    let names = ["Sawitzki", "Meier", "Schneider"]
-    functionWithParameter(pList: names)
-    functionWithParameters(description: "Hello", pList: names, size: 42)
-    functionWithParameters2("Hello", names, 42)
-   // functionWithParameters(description: "Hello", size: 42, pList: names)
+    let namesList = ["Sawitzki", "Meier", "Schneider"]
+    functionWithParameter(pList: namesList)
+    let result2 = functionWithParameters(description: "Hello", pList: namesList, size: 42)
+    print(result2)
+    let result3 = functionWithAnonymousParameters("Hello", namesList, 42)
+    print(result3)
 }
 
 func parameterlessVoidFunction(){
@@ -26,50 +28,39 @@ func parameterlessVoidFunction(){
 
 func parameterlessStringFunction() -> String{
     print("calling parameterlessStringFunction")
-    return "Back from function"
+    let resultInFunction = "Back from function"
+    return resultInFunction
+
 }
 
 func functionWithParameter(pList: Array<String>){
     print("calling functionWithParameter")
 
-    for ele in pList{
-        print (ele)
+    for element in pList{
+        print (element)
     }
     
 }
 
-func functionWithParameters(description egal: String, pList: Array<String>, size: Int){
-    print("calling functionWithParameters " + egal)
-    
+func functionWithParameters(description: String, pList: Array<String>, size: Int) -> String{
+    print("calling functionWithParameters, description= \(description), size= \(size)")
     for ele in pList{
         print (ele)
     }
+    
+    return "OK"
     
 }
-func functionWithParameters(name egal: String, pList: Array<String>, size: Int){
-    print("calling functionWithParameters " + egal)
-    
+
+func functionWithAnonymousParameters(_ description: String, _ pList: Array<String>, _ size: Int) -> String{
+    print("calling functionWithParameters, description= \(description), size= \(size)")
     for ele in pList{
         print (ele)
     }
+    
+    return "OK"
     
 }
 
 
-func functionWithParameters(description egal: String, pList: Array<String>, size: Int, height: Double ){
-    print("calling functionWithParameters " + egal)
-    
-    for ele in pList{
-        print (ele)
-    }
-    
-}
 
-func functionWithParameters2(_ description: String, _ pList: Array<String>, _ size: Int){
-    print("calling functionWithParameters " + description)
-    
-    for ele in pList{
-        print (ele)
-    }
-    
-}
