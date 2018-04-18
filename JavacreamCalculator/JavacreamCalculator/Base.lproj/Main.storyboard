@@ -18,62 +18,119 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0i1-Ig-fRT">
-                                <rect key="frame" x="125" y="20" width="125" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nuh-T6-VoQ">
+                                <rect key="frame" x="80" y="293.5" width="215" height="80.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DE8-eD-B9B">
-                                        <rect key="frame" x="0.0" y="0.0" width="125" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="o5e-dI-cwm">
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="80.5"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cAs-9e-u5d">
-                                                <rect key="frame" x="0.0" y="0.0" width="25" height="30"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2O-n9-2QO">
-                                                <rect key="frame" x="25" y="0.0" width="100" height="30"/>
-                                                <state key="normal" title="Calculate Area"/>
-                                                <connections>
-                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pbX-De-lhU"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="S7V-hd-8eL">
+                                                <rect key="frame" x="0.0" y="0.0" width="215" height="80.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ezx-O3-5Kc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="215" height="80.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0Jk-0g-QU9">
+                                                                <rect key="frame" x="0.0" y="0.0" width="215" height="80.5"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cwi-9a-GWV">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="215" height="80.5"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6OS-Ff-qeX">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="215" height="80.5"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4MT-gw-gMJ">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="215" height="80.5"/>
+                                                                                        <subviews>
+                                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sYl-wH-KGF">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="215" height="80.5"/>
+                                                                                                <subviews>
+                                                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0i1-Ig-fRT">
+                                                                                                        <rect key="frame" x="0.0" y="0.0" width="215" height="80.5"/>
+                                                                                                        <subviews>
+                                                                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DE8-eD-B9B">
+                                                                                                                <rect key="frame" x="0.0" y="0.0" width="215" height="30"/>
+                                                                                                                <subviews>
+                                                                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cAs-9e-u5d">
+                                                                                                                        <rect key="frame" x="0.0" y="0.0" width="115" height="30"/>
+                                                                                                                        <nil key="textColor"/>
+                                                                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                                                        <textInputTraits key="textInputTraits"/>
+                                                                                                                    </textField>
+                                                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2O-n9-2QO">
+                                                                                                                        <rect key="frame" x="115" y="0.0" width="100" height="30"/>
+                                                                                                                        <constraints>
+                                                                                                                            <constraint firstAttribute="width" constant="100" id="dED-UT-9aE"/>
+                                                                                                                        </constraints>
+                                                                                                                        <state key="normal" title="Calculate Area"/>
+                                                                                                                        <connections>
+                                                                                                                            <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pbX-De-lhU"/>
+                                                                                                                        </connections>
+                                                                                                                    </button>
+                                                                                                                </subviews>
+                                                                                                            </stackView>
+                                                                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EcA-DM-TJy">
+                                                                                                                <rect key="frame" x="0.0" y="30" width="215" height="30"/>
+                                                                                                                <subviews>
+                                                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tI-Ao-98P">
+                                                                                                                        <rect key="frame" x="0.0" y="0.0" width="95" height="30"/>
+                                                                                                                        <state key="normal" title="CalculateSum"/>
+                                                                                                                        <connections>
+                                                                                                                            <action selector="doCalculateSum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PiI-ph-wmO"/>
+                                                                                                                        </connections>
+                                                                                                                    </button>
+                                                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlB-bA-0dn">
+                                                                                                                        <rect key="frame" x="95" y="0.0" width="120" height="30"/>
+                                                                                                                        <state key="normal" title="CalculateAverage"/>
+                                                                                                                        <connections>
+                                                                                                                            <action selector="doCalculateAverage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T6w-vk-ZKL"/>
+                                                                                                                        </connections>
+                                                                                                                    </button>
+                                                                                                                </subviews>
+                                                                                                            </stackView>
+                                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fth-oy-E8F">
+                                                                                                                <rect key="frame" x="0.0" y="60" width="215" height="20.5"/>
+                                                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                                                <nil key="textColor"/>
+                                                                                                                <nil key="highlightedColor"/>
+                                                                                                            </label>
+                                                                                                        </subviews>
+                                                                                                    </stackView>
+                                                                                                </subviews>
+                                                                                            </stackView>
+                                                                                        </subviews>
+                                                                                    </stackView>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="DE8-eD-B9B" firstAttribute="centerY" secondItem="0i1-Ig-fRT" secondAttribute="centerY" id="WO8-Kp-b2D"/>
-                                    <constraint firstItem="DE8-eD-B9B" firstAttribute="centerX" secondItem="0i1-Ig-fRT" secondAttribute="centerX" id="dVI-4t-lAg"/>
-                                </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tI-Ao-98P">
-                                <rect key="frame" x="140" y="58" width="95" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="CalculateSum"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYi-Z6-Jvo">
+                                <rect key="frame" x="131" y="382" width="138" height="30"/>
+                                <state key="normal" title="Execute Book Demo"/>
                                 <connections>
-                                    <action selector="doCalculateSum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PiI-ph-wmO"/>
+                                    <action selector="doBookDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="thr-oS-lqb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlB-bA-0dn">
-                                <rect key="frame" x="127" y="108" width="120" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="CalculateAverage"/>
-                                <connections>
-                                    <action selector="doCalculateAverage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T6w-vk-ZKL"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fth-oy-E8F">
-                                <rect key="frame" x="166" y="323" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0i1-Ig-fRT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9uz-VX-8yU"/>
+                            <constraint firstItem="Nuh-T6-VoQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AX1-fO-yeY"/>
+                            <constraint firstItem="cYi-Z6-Jvo" firstAttribute="top" secondItem="Nuh-T6-VoQ" secondAttribute="bottom" constant="7" id="QG3-ys-1Az"/>
+                            <constraint firstItem="Nuh-T6-VoQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fHs-KM-Qgv"/>
+                            <constraint firstItem="Nuh-T6-VoQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nen-H5-i4j"/>
+                            <constraint firstItem="cYi-Z6-Jvo" firstAttribute="leading" secondItem="oKK-cC-7Tq" secondAttribute="leading" constant="131" id="u4j-OI-faH"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="oKK-cC-7Tq"/>
                     </view>
                     <connections>
                         <outlet property="areaOutput" destination="fth-oy-E8F" id="n6y-L1-9nk"/>

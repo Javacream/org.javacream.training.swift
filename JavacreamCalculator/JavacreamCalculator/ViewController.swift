@@ -10,7 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var areaOutput: UILabel!
+    @IBAction func doBookDemo(_ sender: Any) {
+    bookDemo()}
     
+
     @IBOutlet weak var radiusInput: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
