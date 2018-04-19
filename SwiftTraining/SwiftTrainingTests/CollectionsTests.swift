@@ -12,6 +12,19 @@ import XCTest
 @testable import SwiftTraining
 class CollectionsTests: XCTestCase {
 
+    func testArrayCopy(){
+        var names: Array<String> = []
+        names.append("Hugo")
+        names.append("Emil")
+        XCTAssertEqual(2, names.count)
+        var names2 = names
+        XCTAssertEqual(2, names2.count)
+        names.append("Fritz")
+        XCTAssertEqual(3, names.count)
+        XCTAssertEqual(2, names2.count) //Array, Dictionary und Set sind Swift-structs! Keine Klassen!
+    }
+
+
     func testArray(){
         var names: Array<String> = []
         names.append("Hugo")

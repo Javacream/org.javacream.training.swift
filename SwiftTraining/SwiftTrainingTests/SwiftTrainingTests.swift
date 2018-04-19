@@ -193,7 +193,7 @@ class SwiftTrainingTests: XCTestCase {
         people.append(Person(personId: 1, lastname: "Al", firstname: "Eg"))
         XCTAssertEqual(4, people.count)
         people = pc.findAll()
-        XCTAssertEqual(4, people.count)
+        XCTAssertEqual(3, people.count)
 
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let controller = PeopleController()
+    static let controller = PeopleController()
     @IBOutlet weak var lastnameInput: UITextField!
     
     @IBOutlet weak var firstnameInput: UITextField!
@@ -30,10 +30,10 @@ class ViewController: UIViewController {
         let firstname = firstnameInput.text!
         let height = heightInput.text!
 
-        let person = controller.create(lastname: lastname, firstname: firstname)
+        let person = ViewController.controller.create(lastname: lastname, firstname: firstname)
         person.height = Int(height)!
-        print(person.sayHello())
-        print(person.info())
+        //print(person.sayHello())
+        //print(person.info())
 
         
     }
@@ -46,23 +46,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func executeDump(_ sender: UIButton) {
-        let lastname = lastnameInput.text
-        if let output = lastname{
-            print("Eingegebener Nachname: \(output)")
-
+        let allPeople = ViewController.controller.findAll()
+        for person in allPeople {
+            print(person.sayHello())
         }
-        let firstname = firstnameInput.text
-        if let output = firstname{
-            print("Eingegebener Vorname: \(output)")
-            
-        }
-        
-        let heightAsString = heightInput.text
-        if let output = heightAsString{
-            print("Eingegebene Größe: \(output)")
-            
-        }
-
     }
     
 }
