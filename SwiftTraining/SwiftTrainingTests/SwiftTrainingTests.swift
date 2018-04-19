@@ -83,7 +83,7 @@ class SwiftTrainingTests: XCTestCase {
         let lastname = "Sawitzki"
         let firstname = "Rainer"
         let height = 183
-        let university = "LMU"
+        let university = University(name: "LMU", address: Address(city: "München", street: "Egal"))
         let pc = PeopleController()
         let s = pc.createStudent(lastname: lastname, firstname: firstname, university: university)
         s.height = height
@@ -92,8 +92,9 @@ class SwiftTrainingTests: XCTestCase {
     
     func testPolymorphism(){
         let pc = PeopleController()
-        let s = pc.createStudent(lastname: "Meier", firstname: "Hans", university: "TU")
         let p = pc.create(lastname: "Schneider", firstname: "Hans")
+        let university = University(name: "LMU", address: Address(city: "München", street: "Egal"))
+        let s = pc.createStudent(lastname: "Meier", firstname: "Hans", university: university)
         s.height = 199
         p.height = 173
         print ("s: \(s.height), p: \(p.height)")
@@ -122,7 +123,9 @@ class SwiftTrainingTests: XCTestCase {
 
     func testMarriage(){
         let pc = PeopleController()
-        let p1 = pc.createStudent(lastname: "Meier", firstname: "Hans", university: "TU")
+        let university = University(name: "LMU", address: Address(city: "München", street: "Egal"))
+
+        let p1 = pc.createStudent(lastname: "Meier", firstname: "Hans", university: university)
         let p2 = pc.create(lastname: "Schneider", firstname: "Hans")
         let p3 = pc.create(lastname: "Metzger", firstname: "Hans")
 
@@ -160,6 +163,37 @@ class SwiftTrainingTests: XCTestCase {
         p1.address!.street = "Schlossplatz"
         XCTAssertEqual("Stuttgart", p1.address!.city)
         XCTAssertEqual("München", p2.address!.city)
+
+    }
+    
+    
+    func testPeopleWithCompany(){
+        let lastname = "Sawitzki"
+        let firstname = "Rainer"
+        let pc = PeopleController()
+        let p1 = pc.createStudent(lastname: lastname, firstname: firstname, university: University(name: "LMU", address: Address(city: "München", street: "Geschwister-Scholl-Platz")))
+        let p2 = pc.createWorker(lastname: lastname, firstname: firstname, company: Company(companyId: 1, name: "BMW", address: Address(city: "Leipzig", street: "BMW-Allee")))
+        
+    }
+    
+    func testPeopleControllerExtended(){
+        let lastname = "Sawitzki"
+        let firstname = "Rainer"
+        let pc = PeopleController()
+        let p1 = pc.createStudent(lastname: lastname, firstname: firstname, university: University(name: "LMU", address: Address(city: "München", street: "Geschwister-Scholl-Platz")))
+        let p2 = pc.createWorker(lastname: lastname, firstname: firstname, company: Company(companyId: 1, name: "BMW", address: Address(city: "Leipzig", street: "BMW-Allee")))
+        
+        var people = pc.findAll()
+        XCTAssertEqual(2, people.count)
+        
+        let p3 = pc.create(lastname: lastname, firstname: firstname)
+        people = pc.findAll()
+        XCTAssertEqual(3, people.count)
+        
+        people.append(Person(personId: 1, lastname: "Al", firstname: "Eg"))
+        XCTAssertEqual(4, people.count)
+        people = pc.findAll()
+        XCTAssertEqual(4, people.count)
 
     }
 }

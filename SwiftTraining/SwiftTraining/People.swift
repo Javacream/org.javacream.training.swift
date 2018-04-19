@@ -65,33 +65,90 @@ class Person{
 }
 
 class Student : Person{
-    var university: String = ""
-    init(personId: Int, lastname: String, firstname: String, university: String) {
-        super.init(personId: personId, lastname: lastname, firstname: firstname)
-        self.university = university
-    }
+    var university: University?
     func study() -> String{
-        return "\(self.sayHello()) studying at \(university)"
+        return "\(self.sayHello()) studying at \(university?.name)"
     }
     override func sayHello() -> String{
-        return "\(super.sayHello()) studying at \(university)"
+        return "\(super.sayHello()) studying at \(String(describing: university?.name))"
     }
 
 }
 
+class Worker : Person{
+    var company: Company?
+    func work() -> String{
+        return "\(self.sayHello()) working at \(String(describing: company?.companyName))"
+    }
+    override func sayHello() -> String{
+        return "\(super.sayHello()) working at \(String(describing: company?.companyId))"
+    }
+    
+}
+
+
+class University{
+    let name: String
+    let address: Address
+    init(name: String, address: Address){
+        self.name = name
+        self.address = address
+    }
+    
+    func info() -> String{
+        return "University: name= \(name), address=\(address)"
+    }
+}
+class Company{
+    let companyId: Int
+    let companyName: String
+    let address: Address
+    init(companyId: Int, name: String, address: Address){
+        self.companyId = companyId
+        self.companyName = name
+        self.address = address
+    }
+    
+    func info() -> String{
+        return "Company: name= \(companyName), address=\(address)"
+    }
+}
+
 class PeopleController{
     var counter = 0
+    var people: Dictionary<Int, Person> = [:]
     
     func create(lastname: String, firstname: String) -> Person{
         counter = counter + 1
         let person = Person(personId: counter, lastname: lastname, firstname: firstname)
+        people[counter] = person
         return person
     }
-    func createStudent(lastname: String, firstname: String, university: String) -> Student{
+    func createStudent(lastname: String, firstname: String, university: University?) -> Student{
         counter = counter + 1
-        let person = Student(personId: counter, lastname: lastname, firstname: firstname, university: university)
+        let person = Student(personId: counter, lastname: lastname, firstname: firstname)
+        person.university = university
+        people[counter] = person
+       return person
+    }
+    func createWorker(lastname: String, firstname: String, company: Company?) -> Worker{
+        counter = counter + 1
+        let person = Worker(personId: counter, lastname: lastname, firstname: firstname)
+        person.company = company
+        people[counter] = person
         return person
     }
+    
+    func findById(id: Int) -> Person? {
+        return people[id]
+    }
+    func findAll() -> Array<Person> {
+        return Array(people.values)
+    }
+    func deleteById(id: Int) -> Void {
+        people.removeValue(forKey: id)
+    }
+
 }
 
 struct Address{
