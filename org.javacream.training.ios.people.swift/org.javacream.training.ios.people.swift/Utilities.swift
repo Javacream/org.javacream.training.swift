@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-func asyncTaskVoid (background: @escaping () -> Void, update: @escaping (_: Void) -> Void){
+func asyncTaskVoid (background: @escaping () -> Void, update: @escaping () -> Void){
     DispatchQueue.global().async {
         background()
         DispatchQueue.main.async {update()}
