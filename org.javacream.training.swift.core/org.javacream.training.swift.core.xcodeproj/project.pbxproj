@@ -20,6 +20,8 @@
 		18AB03641E37446F0063AD1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AB03631E37446F0063AD1B /* Assets.xcassets */; };
 		18AB03671E37446F0063AD1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AB03651E37446F0063AD1B /* LaunchScreen.storyboard */; };
 		18AB036F1E37453C0063AD1B /* VarsAndTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB036E1E37453C0063AD1B /* VarsAndTypes.swift */; };
+		18B3F80220EB65710037A0A6 /* OOP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3F80120EB65710037A0A6 /* OOP.swift */; };
+		18B3F82620EBAB0A0037A0A6 /* Scratch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3F82520EBAB0A0037A0A6 /* Scratch.swift */; };
 		841540C82084E2CF007EE197 /* PostalCodesSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841540C72084E2CF007EE197 /* PostalCodesSample.swift */; };
 		841540CA2085DB02007EE197 /* TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841540C92085DB02007EE197 /* TypeConversion.swift */; };
 		841540CC2085FA54007EE197 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841540CB2085FA54007EE197 /* Calculator.swift */; };
@@ -41,6 +43,8 @@
 		18AB03661E37446F0063AD1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18AB03681E37446F0063AD1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18AB036E1E37453C0063AD1B /* VarsAndTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarsAndTypes.swift; sourceTree = "<group>"; };
+		18B3F80120EB65710037A0A6 /* OOP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOP.swift; sourceTree = "<group>"; };
+		18B3F82520EBAB0A0037A0A6 /* Scratch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scratch.swift; sourceTree = "<group>"; };
 		841540C72084E2CF007EE197 /* PostalCodesSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalCodesSample.swift; sourceTree = "<group>"; };
 		841540C92085DB02007EE197 /* TypeConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeConversion.swift; sourceTree = "<group>"; };
 		841540CB2085FA54007EE197 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 		18AB035B1E37446F0063AD1B /* org.javacream.training.swift.core */ = {
 			isa = PBXGroup;
 			children = (
+				18B3F82520EBAB0A0037A0A6 /* Scratch.swift */,
 				841540CB2085FA54007EE197 /* Calculator.swift */,
 				841540C92085DB02007EE197 /* TypeConversion.swift */,
 				841540C72084E2CF007EE197 /* PostalCodesSample.swift */,
@@ -92,6 +97,7 @@
 				18AB03631E37446F0063AD1B /* Assets.xcassets */,
 				18AB03651E37446F0063AD1B /* LaunchScreen.storyboard */,
 				18AB03681E37446F0063AD1B /* Info.plist */,
+				18B3F80120EB65710037A0A6 /* OOP.swift */,
 				1801095E1E3778F2003CC2BC /* ReferencesAndValues.swift */,
 			);
 			path = org.javacream.training.swift.core;
@@ -180,6 +186,8 @@
 				18AB035D1E37446F0063AD1B /* AppDelegate.swift in Sources */,
 				18AB036F1E37453C0063AD1B /* VarsAndTypes.swift in Sources */,
 				18A5C0241E375E22008FD753 /* ControllStructures.swift in Sources */,
+				18B3F82620EBAB0A0037A0A6 /* Scratch.swift in Sources */,
+				18B3F80220EB65710037A0A6 /* OOP.swift in Sources */,
 				841540CA2085DB02007EE197 /* TypeConversion.swift in Sources */,
 				841540C82084E2CF007EE197 /* PostalCodesSample.swift in Sources */,
 				1801095D1E376521003CC2BC /* Functions.swift in Sources */,

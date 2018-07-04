@@ -10,9 +10,9 @@ import Foundation
 
 func varsAndTypes(){
     //var <name> = Literal //Variable
-    var name = "Sawitzki" //Type Inference: type of name = type of literal
+    var name:String?  = "Sawitzki" //Type Inference: type of name = type of literal
     name = "Mustermann"
-    
+    name = nil
     let name2 = "Hugo"
     //name2 = "Emil" //Compiler error, let = const
     

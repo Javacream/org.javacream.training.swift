@@ -1,6 +1,6 @@
 
 /* Class = "UILabel"; text = "Given Name:"; ObjectID = "8md-Hg-7Fm"; */
-"8md-Hg-7Fm.text" = "Given Name:";
+"8md-Hg-7Fm.text" = "Firstname:";
 
 /* Class = "UILabel"; text = "Lastname:"; ObjectID = "AND-TA-a5I"; */
 "AND-TA-a5I.text" = "Lastname:";

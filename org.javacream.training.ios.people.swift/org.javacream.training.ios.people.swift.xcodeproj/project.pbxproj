@@ -8,21 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		18AB033B1E3640720063AD1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB033A1E3640720063AD1B /* AppDelegate.swift */; };
-		18AB033D1E3640720063AD1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB033C1E3640720063AD1B /* ViewController.swift */; };
+		18AB033D1E3640720063AD1B /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB033C1E3640720063AD1B /* SaveViewController.swift */; };
 		18AB03401E3640720063AD1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AB033E1E3640720063AD1B /* Main.storyboard */; };
 		18AB03421E3640720063AD1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AB03411E3640720063AD1B /* Assets.xcassets */; };
 		18AB03451E3640720063AD1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AB03431E3640720063AD1B /* LaunchScreen.storyboard */; };
-		18C3BBA31E39ED2600F74900 /* LocalPeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3BBA21E39ED2600F74900 /* LocalPeopleModel.swift */; };
-		18C3BBA51E39ED2F00F74900 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3BBA41E39ED2F00F74900 /* Person.swift */; };
-		18C3BBA71E39F1AE00F74900 /* LongRunningPeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3BBA61E39F1AE00F74900 /* LongRunningPeopleModel.swift */; };
-		18C3BBA91E3A009600F74900 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3BBA81E3A009600F74900 /* Utilities.swift */; };
-		18C3BBAB1E3A120600F74900 /* HttpPeopleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3BBAA1E3A120600F74900 /* HttpPeopleController.swift */; };
+		18B3F82420EB96630037A0A6 /* PeopleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3F82320EB96630037A0A6 /* PeopleApp.swift */; };
+		18B3F84820ECADBD0037A0A6 /* DumpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3F84720ECADBD0037A0A6 /* DumpViewController.swift */; };
+		18B3F84B20ECB5E20037A0A6 /* ClearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3F84A20ECB5E20037A0A6 /* ClearViewController.swift */; };
+		18B3F84D20ECC9A30037A0A6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3F84C20ECC9A30037A0A6 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18AB03371E3640720063AD1B /* org.javacream.training.ios.people.swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = org.javacream.training.ios.people.swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AB033A1E3640720063AD1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18AB033C1E3640720063AD1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18AB033C1E3640720063AD1B /* SaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
 		18AB033F1E3640720063AD1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18AB03411E3640720063AD1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18AB03441E3640720063AD1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,11 +29,10 @@
 		18AB034D1E3651B30063AD1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		18AB034E1E3654640063AD1B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		18AB034F1E3654640063AD1B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		18C3BBA21E39ED2600F74900 /* LocalPeopleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalPeopleModel.swift; sourceTree = "<group>"; };
-		18C3BBA41E39ED2F00F74900 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		18C3BBA61E39F1AE00F74900 /* LongRunningPeopleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongRunningPeopleModel.swift; sourceTree = "<group>"; };
-		18C3BBA81E3A009600F74900 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		18C3BBAA1E3A120600F74900 /* HttpPeopleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpPeopleController.swift; sourceTree = "<group>"; };
+		18B3F82320EB96630037A0A6 /* PeopleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleApp.swift; sourceTree = "<group>"; };
+		18B3F84720ECADBD0037A0A6 /* DumpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DumpViewController.swift; path = org.javacream.training.ios.people.swift/controller/DumpViewController.swift; sourceTree = SOURCE_ROOT; };
+		18B3F84A20ECB5E20037A0A6 /* ClearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearViewController.swift; sourceTree = "<group>"; };
+		18B3F84C20ECC9A30037A0A6 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,19 +65,26 @@
 		18AB03391E3640720063AD1B /* org.javacream.training.ios.people.swift */ = {
 			isa = PBXGroup;
 			children = (
-				18C3BBA81E3A009600F74900 /* Utilities.swift */,
-				18C3BBAA1E3A120600F74900 /* HttpPeopleController.swift */,
-				18C3BBA61E39F1AE00F74900 /* LongRunningPeopleModel.swift */,
-				18C3BBA41E39ED2F00F74900 /* Person.swift */,
-				18C3BBA21E39ED2600F74900 /* LocalPeopleModel.swift */,
+				18B3F84C20ECC9A30037A0A6 /* Utilities.swift */,
+				18B3F84920ECB33C0037A0A6 /* controller */,
 				18AB033A1E3640720063AD1B /* AppDelegate.swift */,
-				18AB033C1E3640720063AD1B /* ViewController.swift */,
+				18B3F82320EB96630037A0A6 /* PeopleApp.swift */,
 				18AB033E1E3640720063AD1B /* Main.storyboard */,
 				18AB03411E3640720063AD1B /* Assets.xcassets */,
 				18AB03431E3640720063AD1B /* LaunchScreen.storyboard */,
 				18AB03461E3640720063AD1B /* Info.plist */,
 			);
 			path = org.javacream.training.ios.people.swift;
+			sourceTree = "<group>";
+		};
+		18B3F84920ECB33C0037A0A6 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				18B3F84720ECADBD0037A0A6 /* DumpViewController.swift */,
+				18AB033C1E3640720063AD1B /* SaveViewController.swift */,
+				18B3F84A20ECB5E20037A0A6 /* ClearViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,13 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18C3BBA91E3A009600F74900 /* Utilities.swift in Sources */,
-				18C3BBA31E39ED2600F74900 /* LocalPeopleModel.swift in Sources */,
-				18AB033D1E3640720063AD1B /* ViewController.swift in Sources */,
-				18C3BBA71E39F1AE00F74900 /* LongRunningPeopleModel.swift in Sources */,
-				18C3BBA51E39ED2F00F74900 /* Person.swift in Sources */,
+				18B3F84D20ECC9A30037A0A6 /* Utilities.swift in Sources */,
+				18B3F84820ECADBD0037A0A6 /* DumpViewController.swift in Sources */,
+				18AB033D1E3640720063AD1B /* SaveViewController.swift in Sources */,
+				18B3F84B20ECB5E20037A0A6 /* ClearViewController.swift in Sources */,
 				18AB033B1E3640720063AD1B /* AppDelegate.swift in Sources */,
-				18C3BBAB1E3A120600F74900 /* HttpPeopleController.swift in Sources */,
+				18B3F82420EB96630037A0A6 /* PeopleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
