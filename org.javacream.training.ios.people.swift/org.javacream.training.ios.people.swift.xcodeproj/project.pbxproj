@@ -16,6 +16,7 @@
 		18B3F84820ECADBD0037A0A6 /* DumpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3F84720ECADBD0037A0A6 /* DumpViewController.swift */; };
 		18B3F84B20ECB5E20037A0A6 /* ClearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3F84A20ECB5E20037A0A6 /* ClearViewController.swift */; };
 		18B3F84D20ECC9A30037A0A6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3F84C20ECC9A30037A0A6 /* Utilities.swift */; };
+		18B3F84F20ECD5470037A0A6 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3F84E20ECD5470037A0A6 /* LoadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		18B3F84720ECADBD0037A0A6 /* DumpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DumpViewController.swift; path = org.javacream.training.ios.people.swift/controller/DumpViewController.swift; sourceTree = SOURCE_ROOT; };
 		18B3F84A20ECB5E20037A0A6 /* ClearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearViewController.swift; sourceTree = "<group>"; };
 		18B3F84C20ECC9A30037A0A6 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		18B3F84E20ECD5470037A0A6 /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				18B3F84720ECADBD0037A0A6 /* DumpViewController.swift */,
 				18AB033C1E3640720063AD1B /* SaveViewController.swift */,
 				18B3F84A20ECB5E20037A0A6 /* ClearViewController.swift */,
+				18B3F84E20ECD5470037A0A6 /* LoadViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				18B3F84D20ECC9A30037A0A6 /* Utilities.swift in Sources */,
 				18B3F84820ECADBD0037A0A6 /* DumpViewController.swift in Sources */,
+				18B3F84F20ECD5470037A0A6 /* LoadViewController.swift in Sources */,
 				18AB033D1E3640720063AD1B /* SaveViewController.swift in Sources */,
 				18B3F84B20ECB5E20037A0A6 /* ClearViewController.swift in Sources */,
 				18AB033B1E3640720063AD1B /* AppDelegate.swift in Sources */,

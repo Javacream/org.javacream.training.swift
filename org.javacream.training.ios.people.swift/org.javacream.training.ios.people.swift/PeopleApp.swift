@@ -20,6 +20,12 @@ class Person{
     func info() -> String{
         return "Person: \(self.firstname) \(self.lastname)"
     }
+    
+    var toJson: String {
+        let dict = ["lastname" : lastname, "firstname" : firstname, ] as [String : Any]
+        let data =  try! JSONSerialization.data(withJSONObject: dict, options: [])
+        return String(data:data, encoding:.utf8)!
+    }
 }
 
 class PeopleController{
@@ -31,7 +37,21 @@ class PeopleController{
             sleep(2)//Simulation der Netzwerk-Latenz
             return p
         }
-        saveIntern ->- saveUpdate
+        
+        func saveInternRest() -> Person{
+            let p =  Person(lastname: lastname, firstname: firstname)
+            people.append(p)
+            let url = URL(string: "http://10.44.4.229:9090/people")
+            var request = URLRequest(url: url!)
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            request.httpMethod = "POST"
+            request.httpBody=p.toJson.data(using: .utf8)
+            let urlSession = URLSession.shared
+            let task = urlSession.dataTask(with: request)
+            task.resume()
+            return p
+        }
+        saveInternRest ->- saveUpdate
     }
     static func clear(clearUpdate: @escaping (Int) -> Void){
         func clearIntern() -> Int{
@@ -43,9 +63,38 @@ class PeopleController{
     }
     static func dump(dumpUpdate: @escaping () -> Void) {
         func dumpIntern() -> Void{
-        people.map({(p:Person) in return p.lastname}).forEach({(lastname) in print(lastname)})
+            sleep(5)
+            people.map({(p:Person) in return p.lastname}).forEach({(lastname) in print(lastname)})
         }
         dumpIntern ->- dumpUpdate
     }
+    
+    static func load(loadUpdate: @escaping (Array<Person>) -> Void){
+        func loadIntern() -> Array<Person>{
+            var result = Array<Person>()
+            if let url = URL(string: "http://10.44.4.229:9090/people") {
+                do {
+                    let contents = try String(contentsOf: url)
+                    let jsonArray = try JSONSerialization.jsonObject(with: contents.data(using: String.Encoding.utf8)!, options: [])
+                    let array = jsonArray as! [Any]
+                    for jsonObject in array{
+                        let personDictionary = jsonObject as! [String: Any]
+                        let lastname = personDictionary["lastname"] as! String
+                        let firstname = personDictionary["firstname"] as! String
+                        
+                        result.append(Person(lastname: lastname, firstname: firstname))
+                    }
+                } catch {
+                    print ("error doing http request: \(error)")
+                }
+            } else {
+                
+                print ("Bad URL")
+            }
+            return result
+        }
         
+        loadIntern ->- loadUpdate
+    }
+    
 }

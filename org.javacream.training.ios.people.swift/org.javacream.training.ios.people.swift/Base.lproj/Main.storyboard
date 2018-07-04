@@ -163,6 +163,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="800-tX-6k6"/>
                         <segue destination="M3Z-WN-L2X" kind="relationship" relationship="viewControllers" id="gy4-W1-hkG"/>
                         <segue destination="seT-R5-F1x" kind="relationship" relationship="viewControllers" id="Hm7-Wd-jqj"/>
+                        <segue destination="4Ae-Sp-xdh" kind="relationship" relationship="viewControllers" id="WOx-Ic-cfM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j8k-4N-RKd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -199,6 +200,38 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NG8-F9-J4n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Load-->
+        <scene sceneID="FTZ-in-AHZ">
+            <objects>
+                <viewController id="4Ae-Sp-xdh" userLabel="Load" customClass="LoadViewController" customModule="org_javacream_training_ios_people_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TDd-3s-xba"/>
+                        <viewControllerLayoutGuide type="bottom" id="JUg-zS-EeW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fmf-Gc-7fq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfM-RI-nBz">
+                                <rect key="frame" x="170" y="318" width="34" height="30"/>
+                                <state key="normal" title="Load"/>
+                                <connections>
+                                    <action selector="doLoad:" destination="4Ae-Sp-xdh" eventType="touchUpInside" id="L8B-ql-XVF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bfM-RI-nBz" firstAttribute="centerY" secondItem="fmf-Gc-7fq" secondAttribute="centerY" id="8Fa-Vd-AAO"/>
+                            <constraint firstItem="bfM-RI-nBz" firstAttribute="centerX" secondItem="fmf-Gc-7fq" secondAttribute="centerX" id="Eh9-mL-Kvc"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Load" id="kUI-WM-beg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NdL-vf-VBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
