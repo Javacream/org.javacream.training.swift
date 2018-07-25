@@ -9,7 +9,7 @@
 import Foundation
 
 class PeopleModel{
-    static var instance = PeopleModel()
+    static let instance = PeopleModel()
     private var people: Array<Person> = []
     
     func add(lastname: String, givenName: String) -> Person{

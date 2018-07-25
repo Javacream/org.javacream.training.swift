@@ -14,6 +14,10 @@ class PeopleListViewController: UIViewController {
         peopleController.savePeopleToFile()
     }
     @IBAction func deleteAllAction(_ sender: Any) {
+        func updateDeleteAll(){
+            //showConfirmDialog(message: "Found people: \(people)" , viewController: self)
+            output.text = ""
+        }
         peopleController.deleteAll(update: updateDeleteAll)
     }
     @IBOutlet weak var output: UITextView!
@@ -30,17 +34,13 @@ class PeopleListViewController: UIViewController {
     
     
     @IBAction func findAllAction(_ sender: Any) {
+        func updateFindAll(_ people: Array<Person>){
+            //showConfirmDialog(message: "Found people: \(people)" , viewController: self)
+            output.text = people.debugDescription
+        }
         peopleController.findAll(update: updateFindAll)
     }
     
-    func updateFindAll(_ people: Array<Person>){
-        //showConfirmDialog(message: "Found people: \(people)" , viewController: self)
-        output.text = people.debugDescription
-    }
     
-    func updateDeleteAll(){
-        //showConfirmDialog(message: "Found people: \(people)" , viewController: self)
-        output.text = ""
-    }
 }
 

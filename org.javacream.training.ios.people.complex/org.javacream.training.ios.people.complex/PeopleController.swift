@@ -15,7 +15,7 @@ extension Person{
     }
 }
 class PeopleController{
-    static var instance = PeopleController()
+    static let instance = PeopleController()
     
     var peopleModel = PeopleModel.instance
     
