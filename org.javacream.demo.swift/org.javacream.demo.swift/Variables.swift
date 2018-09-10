@@ -27,10 +27,31 @@ func trainingVariables(){
     var message = "Hello" //Typ-Bestimmung erfolgt über Type Inference
     var message2:String = "Hello" //Explizite Typ-Angabe
 
-    var message3:String
-    
-    message3 = "Hugo"
-
+    trainingOptionalVariables()
     print(finishMessage)
 
+}
+
+func trainingOptionalVariables(){
+    var message:String? = nil
+    message = "Hugo"
+    //Holzhammer: Explizites Umwandeln Optional->Nicht Optional
+    let outputMessage:String = message!
+    print(outputMessage)
+    //message = nil
+    //Besser, aber nicht Swift-typisch: Prüfung auf nil
+    if (message != nil){
+        let outputMessage2:String = message!
+        print(outputMessage2)
+    }else{
+        print ("message was null")
+    }
+    
+    //Swift-typisch
+    if let outputMessage3 = message{
+        print(outputMessage3)
+    }else{
+        print ("message was null")
+    }
+    
 }
