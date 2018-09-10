@@ -54,4 +54,13 @@ func trainingOptionalVariables(){
         print ("message was null")
     }
     
+    var optionalNumber:Int?
+    var number:Int = 9
+    
+    number = optionalNumber! //ohne ! Compiler-Fehler, potenziell zur Laufzeit gibt es einen Runtime-Fehler!
+    optionalNumber = number
+    
+    
+    
+    
 }
