@@ -10,33 +10,51 @@ import Foundation
 
 func oop(){
     let sawitzki = Person(lastname: "Sawitzki", firstname: "Rainer")
-    print(sawitzki.lastname)
+    let worker:Worker = Worker(lastname: "Schufter", firstname: "Egon", company: "Integrata")
+    let student:Student = Student(lastname: "Einstein", firstname: "Albert", university: "LMU")
+    print("Student: \(student.sayHello())")
     printOut(person: sawitzki)
-    print(sawitzki.lastname)
-    let person = sawitzki
-    person.firstname = "Hans"
-    print(sawitzki.firstname)
-    
-    var a1 = Address(city: "München", street: "Marienplatz")
-    sawitzki.address = a1
-    
-    let mustermann = Person(lastname: "Mustermann", firstname: "Hanna")
-    mustermann.address = a1
-    
-    sawitzki.address?.city = "Berlin"
-    sawitzki.address?.street = "Alexanderplatz"
-    
-    print(mustermann.address!.info())
-
+    printOut(person: worker)
+    printOut(person: student)
+    worker.work()
+    student.study()
 
     
 }
 
+class Worker: Person{
+    var company: String
+    init(lastname: String, firstname: String, company: String){
+        self.company = company
+        super.init(lastname: lastname, firstname: firstname)
+        
+    }
+    func work(){
+        print("\(lastname) is working")
+    }
+    
+    override func sayHello() -> String{
+        return "\(super.sayHello()) working at \(company)"
+    }
+}
+class Student: Person{
+    var university: String
+    init(lastname: String, firstname: String, university: String){
+        self.university = university
+        super.init(lastname: lastname, firstname: firstname)
+        
+    }
+    func study(){
+        print("\(lastname) is studying")
+    }
+    override func sayHello() -> String{
+        return "\(super.sayHello()) studying at \(university)"
+    }
+
+}
+
 func printOut(person:Person){
     print (person.sayHello())
-    person.lastname = "Meier"
-    print (person.sayHello())
-
 }
 
 struct Address{
@@ -50,16 +68,16 @@ struct Address{
 
 class Person{
     static let numberOfEyes = 2
-    private var _lastname:String
+    var lastname:String
     var firstname: String
     var address:Address?
     
     init(lastname:String, firstname: String){
-        self._lastname = lastname
+        self.lastname = lastname
         self.firstname = firstname
         
     }
-    
+    /*
     var lastname:String {
         get {
             
@@ -72,8 +90,8 @@ class Person{
             _lastname = newValue //im setter ist das der von außen gesetzte Wert
         }
     }
-    
+    */
     func sayHello() -> String{
-        return "Hello, my name is \(self._lastname)"
+        return "Hello, my name is \(self.firstname) \(self.lastname)"
     }
 }

@@ -72,7 +72,6 @@
                                 <state key="normal" title="OOP"/>
                                 <connections>
                                     <action selector="doOop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mgl-mQ-mem"/>
-                                    <action selector="sayHello:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nns-fx-vJc"/>
                                 </connections>
                             </button>
                         </subviews>
