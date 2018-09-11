@@ -31,8 +31,12 @@ class ViewController: UIViewController {
         let lastname = LastnameInput.text!
         let firstname = FirstnameInput.text!
         let height = HeightInput.text!
-
-        print( "Saving \(lastname) \(firstname) \(height)")
+        if let intHeight = Int(height){
+            let p = Person(lastname: lastname, firstname: firstname, height: intHeight)
+            print( "Saving \(p.sayHello())")
+        }else{
+            print("non parsable height input")
+        }
     }
     
 }

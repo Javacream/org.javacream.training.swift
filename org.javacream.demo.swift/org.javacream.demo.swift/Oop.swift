@@ -10,17 +10,50 @@ import Foundation
 
 func oop(){
     let sawitzki = Person(lastname: "Sawitzki", firstname: "Rainer")
-    print (sawitzki.sayHello())
-    sawitzki.lastname = "Meier"
-    print (sawitzki.lastname)
-    print (sawitzki.firstname)
-    //sawitzki.firstname = "Hugo"
+    print(sawitzki.lastname)
+    printOut(person: sawitzki)
+    print(sawitzki.lastname)
+    let person = sawitzki
+    person.firstname = "Hans"
+    print(sawitzki.firstname)
+    
+    var a1 = Address(city: "München", street: "Marienplatz")
+    sawitzki.address = a1
+    
+    let mustermann = Person(lastname: "Mustermann", firstname: "Hanna")
+    mustermann.address = a1
+    
+    sawitzki.address?.city = "Berlin"
+    sawitzki.address?.street = "Alexanderplatz"
+    
+    print(mustermann.address!.info())
+
+
+    
+}
+
+func printOut(person:Person){
+    print (person.sayHello())
+    person.lastname = "Meier"
+    print (person.sayHello())
+
+}
+
+struct Address{
+    var city:String
+    var street:String
+    
+    func info() -> String{
+        return "Address: city=\(city), street=\(street)"
+    }
 }
 
 class Person{
     static let numberOfEyes = 2
     private var _lastname:String
-    let firstname: String
+    var firstname: String
+    var address:Address?
+    
     init(lastname:String, firstname: String){
         self._lastname = lastname
         self.firstname = firstname
