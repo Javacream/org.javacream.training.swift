@@ -61,6 +61,4 @@ func trainingOptionalVariables(){
     optionalNumber = number
     
     
-    
-    
 }
