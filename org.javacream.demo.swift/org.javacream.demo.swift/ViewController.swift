@@ -3,6 +3,12 @@ import UIKit
 class ViewController: UIViewController {
 
 
+    @IBAction func doTrainingControlStructures(_ sender: Any) {
+        controllStructures()
+    }
+    @IBAction func doTrainingOperators(_ sender: Any) {
+        operators()
+    }
     @IBAction func doTrainingFunctions(_ sender: Any) {
         trainingFunctions()
     }
