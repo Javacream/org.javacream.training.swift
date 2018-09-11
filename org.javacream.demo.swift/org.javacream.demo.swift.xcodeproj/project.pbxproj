@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186F9CF42147999F00392CEA /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F9CF32147999F00392CEA /* Functions.swift */; };
 		18FFFBEF2146739700F820F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFFBEE2146739700F820F7 /* AppDelegate.swift */; };
 		18FFFBF12146739700F820F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFFBF02146739700F820F7 /* ViewController.swift */; };
 		18FFFBF42146739700F820F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FFFBF22146739700F820F7 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		186F9CF32147999F00392CEA /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		18FFFBEB2146739700F820F7 /* org.javacream.demo.swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = org.javacream.demo.swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FFFBEE2146739700F820F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18FFFBF02146739700F820F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		18FFFBED2146739700F820F7 /* org.javacream.demo.swift */ = {
 			isa = PBXGroup;
 			children = (
+				186F9CF32147999F00392CEA /* Functions.swift */,
 				18FFFC002146957700F820F7 /* Variables.swift */,
 				18FFFBEE2146739700F820F7 /* AppDelegate.swift */,
 				18FFFBF02146739700F820F7 /* ViewController.swift */,
@@ -141,6 +144,7 @@
 				18FFFBF12146739700F820F7 /* ViewController.swift in Sources */,
 				18FFFC012146957700F820F7 /* Variables.swift in Sources */,
 				18FFFBEF2146739700F820F7 /* AppDelegate.swift in Sources */,
+				186F9CF42147999F00392CEA /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
