@@ -2,7 +2,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-
+    @IBAction func doOop(_ sender: Any) {
+        oop()
+    }
+    
     @IBAction func doTrainingControlStructures(_ sender: Any) {
         controllStructures()
     }

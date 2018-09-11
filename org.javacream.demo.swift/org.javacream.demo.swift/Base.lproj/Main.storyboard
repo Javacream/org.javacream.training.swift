@@ -42,6 +42,14 @@
                                     <action selector="doTrainingFunctions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cop-5T-vli"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l08-gW-RnY">
+                                <rect key="frame" x="155" y="401" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Operators"/>
+                                <connections>
+                                    <action selector="doTrainingOperators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="va6-kZ-YcH"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGv-zI-jBJ">
                                 <rect key="frame" x="129" y="439" width="117" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -58,12 +66,13 @@
                                     <action selector="doTrainingCollections:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kTG-QW-dCu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l08-gW-RnY">
-                                <rect key="frame" x="155" y="401" width="69" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brA-Cm-Xiw">
+                                <rect key="frame" x="171" y="515" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Operators"/>
+                                <state key="normal" title="OOP"/>
                                 <connections>
-                                    <action selector="doTrainingOperators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="va6-kZ-YcH"/>
+                                    <action selector="doOop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mgl-mQ-mem"/>
+                                    <action selector="sayHello:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nns-fx-vJc"/>
                                 </connections>
                             </button>
                         </subviews>
