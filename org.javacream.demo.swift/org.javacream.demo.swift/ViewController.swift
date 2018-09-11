@@ -18,5 +18,8 @@ class ViewController: UIViewController {
     @IBAction func sayHello(_ sender: Any) {
         print("Hello World")
     }
+    @IBAction func doTrainingCollections(_ sender: Any) {
+        trainingCollections()
+    }
 }
 

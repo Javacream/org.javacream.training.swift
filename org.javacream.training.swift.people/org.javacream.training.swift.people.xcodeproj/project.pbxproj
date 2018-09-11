@@ -7,35 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		186F9CF42147999F00392CEA /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F9CF32147999F00392CEA /* Functions.swift */; };
-		186F9CF62147B28000392CEA /* ControllStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F9CF52147B28000392CEA /* ControllStructures.swift */; };
-		186F9CF82147B29700392CEA /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F9CF72147B29700392CEA /* Operators.swift */; };
-		186F9CFA2147B3B500392CEA /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F9CF92147B3B500392CEA /* Collections.swift */; };
-		18FFFBEF2146739700F820F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFFBEE2146739700F820F7 /* AppDelegate.swift */; };
-		18FFFBF12146739700F820F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFFBF02146739700F820F7 /* ViewController.swift */; };
-		18FFFBF42146739700F820F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FFFBF22146739700F820F7 /* Main.storyboard */; };
-		18FFFBF62146739800F820F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FFFBF52146739800F820F7 /* Assets.xcassets */; };
-		18FFFBF92146739800F820F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FFFBF72146739800F820F7 /* LaunchScreen.storyboard */; };
-		18FFFC012146957700F820F7 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFFC002146957700F820F7 /* Variables.swift */; };
+		186F9D082147BB0900392CEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F9D072147BB0900392CEA /* AppDelegate.swift */; };
+		186F9D0A2147BB0900392CEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F9D092147BB0900392CEA /* ViewController.swift */; };
+		186F9D0D2147BB0900392CEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186F9D0B2147BB0900392CEA /* Main.storyboard */; };
+		186F9D0F2147BB0A00392CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186F9D0E2147BB0A00392CEA /* Assets.xcassets */; };
+		186F9D122147BB0A00392CEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186F9D102147BB0A00392CEA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		186F9CF32147999F00392CEA /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
-		186F9CF52147B28000392CEA /* ControllStructures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllStructures.swift; sourceTree = "<group>"; };
-		186F9CF72147B29700392CEA /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
-		186F9CF92147B3B500392CEA /* Collections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collections.swift; sourceTree = "<group>"; };
-		18FFFBEB2146739700F820F7 /* org.javacream.demo.swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = org.javacream.demo.swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		18FFFBEE2146739700F820F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18FFFBF02146739700F820F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		18FFFBF32146739700F820F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18FFFBF52146739800F820F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		18FFFBF82146739800F820F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		18FFFBFA2146739800F820F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18FFFC002146957700F820F7 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		186F9D042147BB0900392CEA /* org.javacream.training.swift.people.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = org.javacream.training.swift.people.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		186F9D072147BB0900392CEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		186F9D092147BB0900392CEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		186F9D0C2147BB0900392CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		186F9D0E2147BB0A00392CEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		186F9D112147BB0A00392CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		186F9D132147BB0A00392CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		18FFFBE82146739700F820F7 /* Frameworks */ = {
+		186F9D012147BB0900392CEA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,76 +35,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18FFFBE22146739700F820F7 = {
+		186F9CFB2147BB0900392CEA = {
 			isa = PBXGroup;
 			children = (
-				18FFFBED2146739700F820F7 /* org.javacream.demo.swift */,
-				18FFFBEC2146739700F820F7 /* Products */,
+				186F9D062147BB0900392CEA /* org.javacream.training.swift.people */,
+				186F9D052147BB0900392CEA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		18FFFBEC2146739700F820F7 /* Products */ = {
+		186F9D052147BB0900392CEA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18FFFBEB2146739700F820F7 /* org.javacream.demo.swift.app */,
+				186F9D042147BB0900392CEA /* org.javacream.training.swift.people.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		18FFFBED2146739700F820F7 /* org.javacream.demo.swift */ = {
+		186F9D062147BB0900392CEA /* org.javacream.training.swift.people */ = {
 			isa = PBXGroup;
 			children = (
-				186F9CF92147B3B500392CEA /* Collections.swift */,
-				186F9CF72147B29700392CEA /* Operators.swift */,
-				186F9CF52147B28000392CEA /* ControllStructures.swift */,
-				186F9CF32147999F00392CEA /* Functions.swift */,
-				18FFFC002146957700F820F7 /* Variables.swift */,
-				18FFFBEE2146739700F820F7 /* AppDelegate.swift */,
-				18FFFBF02146739700F820F7 /* ViewController.swift */,
-				18FFFBF22146739700F820F7 /* Main.storyboard */,
-				18FFFBF52146739800F820F7 /* Assets.xcassets */,
-				18FFFBF72146739800F820F7 /* LaunchScreen.storyboard */,
-				18FFFBFA2146739800F820F7 /* Info.plist */,
+				186F9D072147BB0900392CEA /* AppDelegate.swift */,
+				186F9D092147BB0900392CEA /* ViewController.swift */,
+				186F9D0B2147BB0900392CEA /* Main.storyboard */,
+				186F9D0E2147BB0A00392CEA /* Assets.xcassets */,
+				186F9D102147BB0A00392CEA /* LaunchScreen.storyboard */,
+				186F9D132147BB0A00392CEA /* Info.plist */,
 			);
-			path = org.javacream.demo.swift;
+			path = org.javacream.training.swift.people;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		18FFFBEA2146739700F820F7 /* org.javacream.demo.swift */ = {
+		186F9D032147BB0900392CEA /* org.javacream.training.swift.people */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18FFFBFD2146739800F820F7 /* Build configuration list for PBXNativeTarget "org.javacream.demo.swift" */;
+			buildConfigurationList = 186F9D162147BB0A00392CEA /* Build configuration list for PBXNativeTarget "org.javacream.training.swift.people" */;
 			buildPhases = (
-				18FFFBE72146739700F820F7 /* Sources */,
-				18FFFBE82146739700F820F7 /* Frameworks */,
-				18FFFBE92146739700F820F7 /* Resources */,
+				186F9D002147BB0900392CEA /* Sources */,
+				186F9D012147BB0900392CEA /* Frameworks */,
+				186F9D022147BB0900392CEA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = org.javacream.demo.swift;
-			productName = org.javacream.demo.swift;
-			productReference = 18FFFBEB2146739700F820F7 /* org.javacream.demo.swift.app */;
+			name = org.javacream.training.swift.people;
+			productName = org.javacream.training.swift.people;
+			productReference = 186F9D042147BB0900392CEA /* org.javacream.training.swift.people.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		18FFFBE32146739700F820F7 /* Project object */ = {
+		186F9CFC2147BB0900392CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Javacream;
 				TargetAttributes = {
-					18FFFBEA2146739700F820F7 = {
+					186F9D032147BB0900392CEA = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 18FFFBE62146739700F820F7 /* Build configuration list for PBXProject "org.javacream.demo.swift" */;
+			buildConfigurationList = 186F9CFF2147BB0900392CEA /* Build configuration list for PBXProject "org.javacream.training.swift.people" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -122,59 +107,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 18FFFBE22146739700F820F7;
-			productRefGroup = 18FFFBEC2146739700F820F7 /* Products */;
+			mainGroup = 186F9CFB2147BB0900392CEA;
+			productRefGroup = 186F9D052147BB0900392CEA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18FFFBEA2146739700F820F7 /* org.javacream.demo.swift */,
+				186F9D032147BB0900392CEA /* org.javacream.training.swift.people */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		18FFFBE92146739700F820F7 /* Resources */ = {
+		186F9D022147BB0900392CEA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18FFFBF92146739800F820F7 /* LaunchScreen.storyboard in Resources */,
-				18FFFBF62146739800F820F7 /* Assets.xcassets in Resources */,
-				18FFFBF42146739700F820F7 /* Main.storyboard in Resources */,
+				186F9D122147BB0A00392CEA /* LaunchScreen.storyboard in Resources */,
+				186F9D0F2147BB0A00392CEA /* Assets.xcassets in Resources */,
+				186F9D0D2147BB0900392CEA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		18FFFBE72146739700F820F7 /* Sources */ = {
+		186F9D002147BB0900392CEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18FFFBF12146739700F820F7 /* ViewController.swift in Sources */,
-				18FFFC012146957700F820F7 /* Variables.swift in Sources */,
-				18FFFBEF2146739700F820F7 /* AppDelegate.swift in Sources */,
-				186F9CF42147999F00392CEA /* Functions.swift in Sources */,
-				186F9CF62147B28000392CEA /* ControllStructures.swift in Sources */,
-				186F9CFA2147B3B500392CEA /* Collections.swift in Sources */,
-				186F9CF82147B29700392CEA /* Operators.swift in Sources */,
+				186F9D0A2147BB0900392CEA /* ViewController.swift in Sources */,
+				186F9D082147BB0900392CEA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		18FFFBF22146739700F820F7 /* Main.storyboard */ = {
+		186F9D0B2147BB0900392CEA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				18FFFBF32146739700F820F7 /* Base */,
+				186F9D0C2147BB0900392CEA /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		18FFFBF72146739800F820F7 /* LaunchScreen.storyboard */ = {
+		186F9D102147BB0A00392CEA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				18FFFBF82146739800F820F7 /* Base */,
+				186F9D112147BB0A00392CEA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -182,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		18FFFBFB2146739800F820F7 /* Debug */ = {
+		186F9D142147BB0A00392CEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -242,7 +222,7 @@
 			};
 			name = Debug;
 		};
-		18FFFBFC2146739800F820F7 /* Release */ = {
+		186F9D152147BB0A00392CEA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -296,34 +276,34 @@
 			};
 			name = Release;
 		};
-		18FFFBFE2146739800F820F7 /* Debug */ = {
+		186F9D172147BB0A00392CEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = org.javacream.demo.swift/Info.plist;
+				INFOPLIST_FILE = org.javacream.training.swift.people/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Javacream.org-javacream-demo-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "Javacream.org-javacream-training-swift-people";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		18FFFBFF2146739800F820F7 /* Release */ = {
+		186F9D182147BB0A00392CEA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = org.javacream.demo.swift/Info.plist;
+				INFOPLIST_FILE = org.javacream.training.swift.people/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Javacream.org-javacream-demo-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "Javacream.org-javacream-training-swift-people";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -333,25 +313,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18FFFBE62146739700F820F7 /* Build configuration list for PBXProject "org.javacream.demo.swift" */ = {
+		186F9CFF2147BB0900392CEA /* Build configuration list for PBXProject "org.javacream.training.swift.people" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				18FFFBFB2146739800F820F7 /* Debug */,
-				18FFFBFC2146739800F820F7 /* Release */,
+				186F9D142147BB0A00392CEA /* Debug */,
+				186F9D152147BB0A00392CEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18FFFBFD2146739800F820F7 /* Build configuration list for PBXNativeTarget "org.javacream.demo.swift" */ = {
+		186F9D162147BB0A00392CEA /* Build configuration list for PBXNativeTarget "org.javacream.training.swift.people" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				18FFFBFE2146739800F820F7 /* Debug */,
-				18FFFBFF2146739800F820F7 /* Release */,
+				186F9D172147BB0A00392CEA /* Debug */,
+				186F9D182147BB0A00392CEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 18FFFBE32146739700F820F7 /* Project object */;
+	rootObject = 186F9CFC2147BB0900392CEA /* Project object */;
 }

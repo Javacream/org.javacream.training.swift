@@ -34,12 +34,12 @@
                                     <action selector="doTrainingVariable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VMY-bL-oXs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l08-gW-RnY">
-                                <rect key="frame" x="153" y="394" width="69" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xes-RN-aND">
+                                <rect key="frame" x="155" y="477" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Operators"/>
+                                <state key="normal" title="Functions"/>
                                 <connections>
-                                    <action selector="doTrainingOperators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="va6-kZ-YcH"/>
+                                    <action selector="doTrainingFunctions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cop-5T-vli"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGv-zI-jBJ">
@@ -50,12 +50,20 @@
                                     <action selector="doTrainingControlStructures:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PFZ-4P-8VA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xes-RN-aND">
-                                <rect key="frame" x="155" y="477" width="68" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PwK-WF-Sfx">
+                                <rect key="frame" x="150" y="380" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Functions"/>
+                                <state key="normal" title="Collections"/>
                                 <connections>
-                                    <action selector="doTrainingFunctions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cop-5T-vli"/>
+                                    <action selector="doTrainingCollections:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kTG-QW-dCu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l08-gW-RnY">
+                                <rect key="frame" x="155" y="401" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Operators"/>
+                                <connections>
+                                    <action selector="doTrainingOperators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="va6-kZ-YcH"/>
                                 </connections>
                             </button>
                         </subviews>
