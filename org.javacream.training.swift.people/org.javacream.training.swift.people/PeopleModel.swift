@@ -51,17 +51,21 @@ class Person{
     }
     
 }
+enum PeopleModelError:Error {
+    case save(String)
+}
 
-
-class PeopleController{
+class PeopleModel{
+    private let heightRange = 25...250
     var people: Array<Person> = []
-    func savePerson(lastname:String, firstname:String, height: Int){
+    @discardableResult func savePerson(lastname:String, firstname:String, height: Int) throws -> Person {
+        if (lastname.count < 2 || firstname.count < 2 || !heightRange.contains(height)){
+            throw PeopleModelError.save("illegal parameters: lastname=\(lastname), firstname=\(firstname), height=\(height)")
+        }else{
             let p = Person(lastname: lastname, firstname: firstname, height: height)
             people.append(p)
-    }
-    
-    func dump(){
-        people.forEach({(p) in print(p.sayHello())})
+            return p
+        }
     }
     
     

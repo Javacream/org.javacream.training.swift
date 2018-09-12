@@ -23,31 +23,22 @@
                                 <rect key="frame" x="16" y="615" width="343" height="52"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmJ-PM-Vkx">
-                                        <rect key="frame" x="0.0" y="0.0" width="114.5" height="52"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="172" height="52"/>
                                         <state key="normal" title="Save"/>
                                         <connections>
                                             <action selector="doSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5x9-8O-eSB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkR-cT-yyk">
-                                        <rect key="frame" x="114.5" y="0.0" width="114" height="52"/>
+                                        <rect key="frame" x="172" y="0.0" width="171" height="52"/>
                                         <state key="normal" title="Reset"/>
                                         <connections>
                                             <action selector="doReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kvb-m3-rrQ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyG-vS-g21">
-                                        <rect key="frame" x="228.5" y="0.0" width="114.5" height="52"/>
-                                        <state key="normal" title="Dump"/>
-                                        <connections>
-                                            <action selector="doDump:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kWF-Tj-KV4"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="xyG-vS-g21" firstAttribute="height" secondItem="VmJ-PM-Vkx" secondAttribute="height" id="c4i-Zd-6AY"/>
                                     <constraint firstItem="pkR-cT-yyk" firstAttribute="width" secondItem="VmJ-PM-Vkx" secondAttribute="width" id="jVV-Ai-UPL"/>
-                                    <constraint firstItem="xyG-vS-g21" firstAttribute="width" secondItem="VmJ-PM-Vkx" secondAttribute="width" id="pKB-9v-NeI"/>
                                     <constraint firstItem="pkR-cT-yyk" firstAttribute="height" secondItem="VmJ-PM-Vkx" secondAttribute="height" id="sh8-af-iaG"/>
                                 </constraints>
                             </stackView>

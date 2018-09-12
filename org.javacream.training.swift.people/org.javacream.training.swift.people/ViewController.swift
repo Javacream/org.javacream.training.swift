@@ -14,13 +14,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var FirstnameInput: UITextField!
     @IBOutlet weak var HeightInput: UITextField!
     
-    let peopleController = PeopleController()
+    var peopleModel:PeopleModel!
     override func viewDidLoad() {
         super.viewDidLoad()
+         peopleModel = PeopleModel()
     }
-    @IBAction func doDump(_ sender: Any) {
-        peopleController.dump()
-    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -37,7 +36,16 @@ class ViewController: UIViewController {
         let firstname = FirstnameInput.text!
         let height = HeightInput.text!
         if let intHeight = Int(height){
-            peopleController.savePerson(lastname: lastname, firstname: firstname, height: intHeight)
+            do {
+                try peopleModel.savePerson(lastname: lastname, firstname: firstname, height: intHeight)
+            }
+            catch PeopleModelError.save(let errorMessage){
+                print("error saving person: \(errorMessage)")
+            }
+            catch let errorMessage {
+                print("unknown error saving person: \(errorMessage)")
+            }
+            
         }else{
             print("non parsable height input")
         }

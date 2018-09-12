@@ -12,8 +12,19 @@
 		186F9D0D2147BB0900392CEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186F9D0B2147BB0900392CEA /* Main.storyboard */; };
 		186F9D0F2147BB0A00392CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186F9D0E2147BB0A00392CEA /* Assets.xcassets */; };
 		186F9D122147BB0A00392CEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186F9D102147BB0A00392CEA /* LaunchScreen.storyboard */; };
-		18EFEFFC2147E9FC00DCF945 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFEFFB2147E9FC00DCF945 /* People.swift */; };
+		18EFEFFC2147E9FC00DCF945 /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFEFFB2147E9FC00DCF945 /* PeopleModel.swift */; };
+		18EFF01E21491B6F00DCF945 /* PeopleModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFF01D21491B6F00DCF945 /* PeopleModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18EFF01821491B2700DCF945 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 186F9CFC2147BB0900392CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 186F9D032147BB0900392CEA;
+			remoteInfo = org.javacream.training.swift.people;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		186F9D042147BB0900392CEA /* org.javacream.training.swift.people.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = org.javacream.training.swift.people.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,11 +34,21 @@
 		186F9D0E2147BB0A00392CEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		186F9D112147BB0A00392CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		186F9D132147BB0A00392CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18EFEFFB2147E9FC00DCF945 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		18EFEFFB2147E9FC00DCF945 /* PeopleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
+		18EFF01321491B2700DCF945 /* org.javacream.training.swift.peopleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = org.javacream.training.swift.peopleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18EFF01721491B2700DCF945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18EFF01D21491B6F00DCF945 /* PeopleModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		186F9D012147BB0900392CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18EFF01021491B2700DCF945 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				186F9D062147BB0900392CEA /* org.javacream.training.swift.people */,
+				18EFF01421491B2700DCF945 /* org.javacream.training.swift.peopleTests */,
 				186F9D052147BB0900392CEA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				186F9D042147BB0900392CEA /* org.javacream.training.swift.people.app */,
+				18EFF01321491B2700DCF945 /* org.javacream.training.swift.peopleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,7 +79,7 @@
 		186F9D062147BB0900392CEA /* org.javacream.training.swift.people */ = {
 			isa = PBXGroup;
 			children = (
-				18EFEFFB2147E9FC00DCF945 /* People.swift */,
+				18EFEFFB2147E9FC00DCF945 /* PeopleModel.swift */,
 				186F9D072147BB0900392CEA /* AppDelegate.swift */,
 				186F9D092147BB0900392CEA /* ViewController.swift */,
 				186F9D0B2147BB0900392CEA /* Main.storyboard */,
@@ -65,6 +88,15 @@
 				186F9D132147BB0A00392CEA /* Info.plist */,
 			);
 			path = org.javacream.training.swift.people;
+			sourceTree = "<group>";
+		};
+		18EFF01421491B2700DCF945 /* org.javacream.training.swift.peopleTests */ = {
+			isa = PBXGroup;
+			children = (
+				18EFF01721491B2700DCF945 /* Info.plist */,
+				18EFF01D21491B6F00DCF945 /* PeopleModelTests.swift */,
+			);
+			path = org.javacream.training.swift.peopleTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +119,24 @@
 			productReference = 186F9D042147BB0900392CEA /* org.javacream.training.swift.people.app */;
 			productType = "com.apple.product-type.application";
 		};
+		18EFF01221491B2700DCF945 /* org.javacream.training.swift.peopleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18EFF01A21491B2700DCF945 /* Build configuration list for PBXNativeTarget "org.javacream.training.swift.peopleTests" */;
+			buildPhases = (
+				18EFF00F21491B2700DCF945 /* Sources */,
+				18EFF01021491B2700DCF945 /* Frameworks */,
+				18EFF01121491B2700DCF945 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18EFF01921491B2700DCF945 /* PBXTargetDependency */,
+			);
+			name = org.javacream.training.swift.peopleTests;
+			productName = org.javacream.training.swift.peopleTests;
+			productReference = 18EFF01321491B2700DCF945 /* org.javacream.training.swift.peopleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +149,10 @@
 				TargetAttributes = {
 					186F9D032147BB0900392CEA = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					18EFF01221491B2700DCF945 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 186F9D032147BB0900392CEA;
 					};
 				};
 			};
@@ -116,6 +170,7 @@
 			projectRoot = "";
 			targets = (
 				186F9D032147BB0900392CEA /* org.javacream.training.swift.people */,
+				18EFF01221491B2700DCF945 /* org.javacream.training.swift.peopleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +186,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18EFF01121491B2700DCF945 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +201,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				186F9D0A2147BB0900392CEA /* ViewController.swift in Sources */,
-				18EFEFFC2147E9FC00DCF945 /* People.swift in Sources */,
+				18EFEFFC2147E9FC00DCF945 /* PeopleModel.swift in Sources */,
 				186F9D082147BB0900392CEA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18EFF00F21491B2700DCF945 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EFF01E21491B6F00DCF945 /* PeopleModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18EFF01921491B2700DCF945 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 186F9D032147BB0900392CEA /* org.javacream.training.swift.people */;
+			targetProxy = 18EFF01821491B2700DCF945 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		186F9D0B2147BB0900392CEA /* Main.storyboard */ = {
@@ -314,6 +392,44 @@
 			};
 			name = Release;
 		};
+		18EFF01B21491B2700DCF945 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = org.javacream.training.swift.peopleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Javacream.org-javacream-training-swift-peopleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/org.javacream.training.swift.people.app/org.javacream.training.swift.people";
+			};
+			name = Debug;
+		};
+		18EFF01C21491B2700DCF945 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = org.javacream.training.swift.peopleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Javacream.org-javacream-training-swift-peopleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/org.javacream.training.swift.people.app/org.javacream.training.swift.people";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +447,15 @@
 			buildConfigurations = (
 				186F9D172147BB0A00392CEA /* Debug */,
 				186F9D182147BB0A00392CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18EFF01A21491B2700DCF945 /* Build configuration list for PBXNativeTarget "org.javacream.training.swift.peopleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18EFF01B21491B2700DCF945 /* Debug */,
+				18EFF01C21491B2700DCF945 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
