@@ -42,13 +42,13 @@ class PeopleModelTests: XCTestCase {
     func testSavePersonIllegalLastnameDetailed() {
         XCTAssertThrowsError(try peopleModel.savePerson(lastname: PeopleModelTests.INVALID_LASTNAME, firstname: PeopleModelTests.VALID_FIRSTNAME, height: PeopleModelTests.VALID_HEIGHT), "illegal lastname",
                              {(error) in
-                                let saveError:PeopleModelErrorClass = error as! PeopleModelErrorClass
-                                //switch saveError {
-                                //case .save(let message):
-                                //    print("saveError: \(message)")
-                                //
-                                //}
-                                print(saveError.description)
+                                let saveError:PeopleModelErrorEnum = error as! PeopleModelErrorEnum
+                                switch saveError {
+                                case .save(let message):
+                                    print("saveError: \(message)")
+                                
+                                }
+                                //print(saveError.description)
         
         
     }
