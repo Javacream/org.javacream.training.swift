@@ -39,6 +39,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyG-vS-g21">
                                         <rect key="frame" x="228.5" y="0.0" width="114.5" height="52"/>
                                         <state key="normal" title="Dump"/>
+                                        <connections>
+                                            <action selector="doDump:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kWF-Tj-KV4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

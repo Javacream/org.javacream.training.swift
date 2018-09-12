@@ -49,4 +49,20 @@ class Person{
     func sayHello() -> String{
         return "Hello, my name is \(self.firstname) \(self._lastname)"
     }
+    
+}
+
+
+class PeopleController{
+    var people: Array<Person> = []
+    func savePerson(lastname:String, firstname:String, height: Int){
+            let p = Person(lastname: lastname, firstname: firstname, height: height)
+            people.append(p)
+    }
+    
+    func dump(){
+        people.forEach({(p) in print(p.sayHello())})
+    }
+    
+    
 }

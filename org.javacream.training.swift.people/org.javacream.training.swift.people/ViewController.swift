@@ -13,10 +13,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var LastnameInput: UITextField!
     @IBOutlet weak var FirstnameInput: UITextField!
     @IBOutlet weak var HeightInput: UITextField!
+    
+    let peopleController = PeopleController()
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    @IBAction func doDump(_ sender: Any) {
+        peopleController.dump()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -32,8 +37,7 @@ class ViewController: UIViewController {
         let firstname = FirstnameInput.text!
         let height = HeightInput.text!
         if let intHeight = Int(height){
-            let p = Person(lastname: lastname, firstname: firstname, height: intHeight)
-            print( "Saving \(p.sayHello())")
+            peopleController.savePerson(lastname: lastname, firstname: firstname, height: intHeight)
         }else{
             print("non parsable height input")
         }
