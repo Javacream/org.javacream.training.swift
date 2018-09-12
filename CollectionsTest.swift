@@ -86,6 +86,7 @@ class CollectionsTest: XCTestCase {
         list.filter({(element) in element.starts(with: "A")}).sorted(by: {(e1, e2) in e1.count < e2.count}).forEach({(element) in print("filtered and sorted from lambda: \(element)")})
 
 
-        
+        list.filter({(element) in element.starts(with: "A")}).sorted(by: {(e1, e2) in e1.count < e2.count}).map({(e) in e.count}).forEach({(element) in print("filtered and sorted from lambda: \(element)")})
+
     }
 }
