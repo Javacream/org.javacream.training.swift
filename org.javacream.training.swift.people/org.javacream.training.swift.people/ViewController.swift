@@ -39,8 +39,9 @@ class ViewController: UIViewController {
             do {
                 try peopleModel.savePerson(lastname: lastname, firstname: firstname, height: intHeight)
             }
-            catch PeopleModelError.save(let errorMessage){
-                print("error saving person: \(errorMessage)")
+            catch let error as PeopleModelErrorClass {
+                print("error saving person: \(error.description)")
+                
             }
             catch let errorMessage {
                 print("unknown error saving person: \(errorMessage)")
