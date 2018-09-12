@@ -12,6 +12,8 @@
 		186F9CF82147B29700392CEA /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F9CF72147B29700392CEA /* Operators.swift */; };
 		186F9CFA2147B3B500392CEA /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F9CF92147B3B500392CEA /* Collections.swift */; };
 		186F9D1A2147E29100392CEA /* Oop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F9D192147E29100392CEA /* Oop.swift */; };
+		18EFF0042148F75000DCF945 /* org_javacream_demo_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFF0032148F75000DCF945 /* org_javacream_demo_swiftTests.swift */; };
+		18EFF00C2148F8F400DCF945 /* CollectionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFF00B2148F8F400DCF945 /* CollectionsTest.swift */; };
 		18FFFBEF2146739700F820F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFFBEE2146739700F820F7 /* AppDelegate.swift */; };
 		18FFFBF12146739700F820F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFFBF02146739700F820F7 /* ViewController.swift */; };
 		18FFFBF42146739700F820F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FFFBF22146739700F820F7 /* Main.storyboard */; };
@@ -20,12 +22,26 @@
 		18FFFC012146957700F820F7 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFFC002146957700F820F7 /* Variables.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		18EFF0062148F75000DCF945 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18FFFBE32146739700F820F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18FFFBEA2146739700F820F7;
+			remoteInfo = org.javacream.demo.swift;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		186F9CF32147999F00392CEA /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		186F9CF52147B28000392CEA /* ControllStructures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllStructures.swift; sourceTree = "<group>"; };
 		186F9CF72147B29700392CEA /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		186F9CF92147B3B500392CEA /* Collections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collections.swift; sourceTree = "<group>"; };
 		186F9D192147E29100392CEA /* Oop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oop.swift; sourceTree = "<group>"; };
+		18EFF0012148F75000DCF945 /* org.javacream.demo.swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = org.javacream.demo.swiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18EFF0032148F75000DCF945 /* org_javacream_demo_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = org_javacream_demo_swiftTests.swift; sourceTree = "<group>"; };
+		18EFF0052148F75000DCF945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18EFF00B2148F8F400DCF945 /* CollectionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CollectionsTest.swift; path = ../../CollectionsTest.swift; sourceTree = "<group>"; };
 		18FFFBEB2146739700F820F7 /* org.javacream.demo.swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = org.javacream.demo.swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FFFBEE2146739700F820F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18FFFBF02146739700F820F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +53,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		18EFEFFE2148F75000DCF945 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18FFFBE82146739700F820F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,10 +70,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18EFF0022148F75000DCF945 /* org.javacream.demo.swiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				18EFF0032148F75000DCF945 /* org_javacream_demo_swiftTests.swift */,
+				18EFF0052148F75000DCF945 /* Info.plist */,
+				18EFF00B2148F8F400DCF945 /* CollectionsTest.swift */,
+			);
+			path = org.javacream.demo.swiftTests;
+			sourceTree = "<group>";
+		};
 		18FFFBE22146739700F820F7 = {
 			isa = PBXGroup;
 			children = (
 				18FFFBED2146739700F820F7 /* org.javacream.demo.swift */,
+				18EFF0022148F75000DCF945 /* org.javacream.demo.swiftTests */,
 				18FFFBEC2146739700F820F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				18FFFBEB2146739700F820F7 /* org.javacream.demo.swift.app */,
+				18EFF0012148F75000DCF945 /* org.javacream.demo.swiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +120,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		18EFF0002148F75000DCF945 /* org.javacream.demo.swiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18EFF00A2148F75000DCF945 /* Build configuration list for PBXNativeTarget "org.javacream.demo.swiftTests" */;
+			buildPhases = (
+				18EFEFFD2148F75000DCF945 /* Sources */,
+				18EFEFFE2148F75000DCF945 /* Frameworks */,
+				18EFEFFF2148F75000DCF945 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18EFF0072148F75000DCF945 /* PBXTargetDependency */,
+			);
+			name = org.javacream.demo.swiftTests;
+			productName = org.javacream.demo.swiftTests;
+			productReference = 18EFF0012148F75000DCF945 /* org.javacream.demo.swiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		18FFFBEA2146739700F820F7 /* org.javacream.demo.swift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18FFFBFD2146739800F820F7 /* Build configuration list for PBXNativeTarget "org.javacream.demo.swift" */;
@@ -112,6 +165,10 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Javacream;
 				TargetAttributes = {
+					18EFF0002148F75000DCF945 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 18FFFBEA2146739700F820F7;
+					};
 					18FFFBEA2146739700F820F7 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -131,11 +188,19 @@
 			projectRoot = "";
 			targets = (
 				18FFFBEA2146739700F820F7 /* org.javacream.demo.swift */,
+				18EFF0002148F75000DCF945 /* org.javacream.demo.swiftTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		18EFEFFF2148F75000DCF945 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18FFFBE92146739700F820F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -149,6 +214,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		18EFEFFD2148F75000DCF945 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EFF0042148F75000DCF945 /* org_javacream_demo_swiftTests.swift in Sources */,
+				18EFF00C2148F8F400DCF945 /* CollectionsTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18FFFBE72146739700F820F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,6 +239,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18EFF0072148F75000DCF945 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18FFFBEA2146739700F820F7 /* org.javacream.demo.swift */;
+			targetProxy = 18EFF0062148F75000DCF945 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		18FFFBF22146739700F820F7 /* Main.storyboard */ = {
@@ -186,6 +268,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		18EFF0082148F75000DCF945 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = org.javacream.demo.swiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Javacream.org-javacream-demo-swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/org.javacream.demo.swift.app/org.javacream.demo.swift";
+			};
+			name = Debug;
+		};
+		18EFF0092148F75000DCF945 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = org.javacream.demo.swiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Javacream.org-javacream-demo-swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/org.javacream.demo.swift.app/org.javacream.demo.swift";
+			};
+			name = Release;
+		};
 		18FFFBFB2146739800F820F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -337,6 +457,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		18EFF00A2148F75000DCF945 /* Build configuration list for PBXNativeTarget "org.javacream.demo.swiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18EFF0082148F75000DCF945 /* Debug */,
+				18EFF0092148F75000DCF945 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		18FFFBE62146739700F820F7 /* Build configuration list for PBXProject "org.javacream.demo.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

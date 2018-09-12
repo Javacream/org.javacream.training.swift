@@ -9,12 +9,20 @@
 import Foundation
 
 func trainingCollections(){
-    let list = ["A", "B", "C"]
+    let list:Array<String> = ["A", "B", "C"]
     let range = 1...5
-    let dictionary = [49 : "Germany", 41: "Italy"]
+    let dictionary:Dictionary<Int, String> = [49 : "Germany", 39: "Italy"]
     
     print(list[2])
-    print(dictionary[49])
+    print(dictionary[49]!)
+    
+    for n in range{
+        print (n)
+    }
+    
+    let set:Set<String> = ["A", "B", "A"]
+    let set2 = ["A", "B"] as Set
+    
     
     
     
