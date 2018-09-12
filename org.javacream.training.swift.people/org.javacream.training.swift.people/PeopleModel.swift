@@ -51,8 +51,15 @@ class Person{
     }
     
 }
-enum PeopleModelError:Error {
-    case save(String)
+enum PeopleModelErrorEnum:Error {
+    case save(description: String)
+}
+
+class PeopleModelErrorClass:Error {
+    var description:String
+    init(description:String){
+        self.description = description
+    }
 }
 
 class PeopleModel{
@@ -60,7 +67,8 @@ class PeopleModel{
     var people: Array<Person> = []
     @discardableResult func savePerson(lastname:String, firstname:String, height: Int) throws -> Person {
         if (lastname.count < 2 || firstname.count < 2 || !heightRange.contains(height)){
-            throw PeopleModelError.save("illegal parameters: lastname=\(lastname), firstname=\(firstname), height=\(height)")
+            throw PeopleModelErrorClass(description: "illegal parameters: lastname=\(lastname), firstname=\(firstname), height=\(height)")
+//            throw PeopleModelError.save(description: "illegal parameters: lastname=\(lastname), firstname=\(firstname), height=\(height)")
         }else{
             let p = Person(lastname: lastname, firstname: firstname, height: height)
             people.append(p)
