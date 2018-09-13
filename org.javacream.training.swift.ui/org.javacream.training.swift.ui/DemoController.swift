@@ -12,8 +12,6 @@ class DemoController{
     let demoModel = DemoApplicationContext.demoModel
     
     func asyncDoDemo (input: String, update: @escaping (String) -> Void) -> Void{
-    //TODO: Im Hintergrund-Thread nun das demoModel.doDemo aufrufen
-    //Anschließend: mit dem Ergebnis update-Funktion aufrufen
         func background() ->String{
                 return demoModel.doDemo(param: input)
         }
