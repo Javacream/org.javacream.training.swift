@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EE354751F289454006F323F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE354741F289454006F323F /* AppDelegate.swift */; };
+		2EE3547A1F289454006F323F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EE354781F289454006F323F /* Main.storyboard */; };
+		2EE3547C1F289454006F323F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EE3547B1F289454006F323F /* Assets.xcassets */; };
+		2EE3547F1F289454006F323F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EE3547D1F289454006F323F /* LaunchScreen.storyboard */; };
+		2EE3548A1F289454006F323F /* org_javacream_training_ios_pageflowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE354891F289454006F323F /* org_javacream_training_ios_pageflowTests.swift */; };
+		2EE354951F289454006F323F /* org_javacream_training_ios_pageflowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE354941F289454006F323F /* org_javacream_training_ios_pageflowUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2EE354861F289454006F323F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EE354691F289454006F323F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EE354701F289454006F323F;
+			remoteInfo = org.javacream.training.ios.pageflow;
+		};
+		2EE354911F289454006F323F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EE354691F289454006F323F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EE354701F289454006F323F;
+			remoteInfo = org.javacream.training.ios.pageflow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2EE354711F289454006F323F /* org.javacream.training.ios.pageflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = org.javacream.training.ios.pageflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EE354741F289454006F323F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EE354791F289454006F323F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2EE3547B1F289454006F323F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EE3547E1F289454006F323F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2EE354801F289454006F323F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EE354851F289454006F323F /* org.javacream.training.ios.pageflowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = org.javacream.training.ios.pageflowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EE354891F289454006F323F /* org_javacream_training_ios_pageflowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = org_javacream_training_ios_pageflowTests.swift; sourceTree = "<group>"; };
+		2EE3548B1F289454006F323F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EE354901F289454006F323F /* org.javacream.training.ios.pageflowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = org.javacream.training.ios.pageflowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EE354941F289454006F323F /* org_javacream_training_ios_pageflowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = org_javacream_training_ios_pageflowUITests.swift; sourceTree = "<group>"; };
+		2EE354961F289454006F323F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EE3546E1F289454006F323F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EE354821F289454006F323F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EE3548D1F289454006F323F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EE354681F289454006F323F = {
+			isa = PBXGroup;
+			children = (
+				2EE354731F289454006F323F /* org.javacream.training.ios.pageflow */,
+				2EE354881F289454006F323F /* org.javacream.training.ios.pageflowTests */,
+				2EE354931F289454006F323F /* org.javacream.training.ios.pageflowUITests */,
+				2EE354721F289454006F323F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EE354721F289454006F323F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EE354711F289454006F323F /* org.javacream.training.ios.pageflow.app */,
+				2EE354851F289454006F323F /* org.javacream.training.ios.pageflowTests.xctest */,
+				2EE354901F289454006F323F /* org.javacream.training.ios.pageflowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EE354731F289454006F323F /* org.javacream.training.ios.pageflow */ = {
+			isa = PBXGroup;
+			children = (
+				2EE354741F289454006F323F /* AppDelegate.swift */,
+				2EE354781F289454006F323F /* Main.storyboard */,
+				2EE3547B1F289454006F323F /* Assets.xcassets */,
+				2EE3547D1F289454006F323F /* LaunchScreen.storyboard */,
+				2EE354801F289454006F323F /* Info.plist */,
+			);
+			path = org.javacream.training.ios.pageflow;
+			sourceTree = "<group>";
+		};
+		2EE354881F289454006F323F /* org.javacream.training.ios.pageflowTests */ = {
+			isa = PBXGroup;
+			children = (
+				2EE354891F289454006F323F /* org_javacream_training_ios_pageflowTests.swift */,
+				2EE3548B1F289454006F323F /* Info.plist */,
+			);
+			path = org.javacream.training.ios.pageflowTests;
+			sourceTree = "<group>";
+		};
+		2EE354931F289454006F323F /* org.javacream.training.ios.pageflowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2EE354941F289454006F323F /* org_javacream_training_ios_pageflowUITests.swift */,
+				2EE354961F289454006F323F /* Info.plist */,
+			);
+			path = org.javacream.training.ios.pageflowUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EE354701F289454006F323F /* org.javacream.training.ios.pageflow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EE354991F289454006F323F /* Build configuration list for PBXNativeTarget "org.javacream.training.ios.pageflow" */;
+			buildPhases = (
+				2EE3546D1F289454006F323F /* Sources */,
+				2EE3546E1F289454006F323F /* Frameworks */,
+				2EE3546F1F289454006F323F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = org.javacream.training.ios.pageflow;
+			productName = org.javacream.training.ios.pageflow;
+			productReference = 2EE354711F289454006F323F /* org.javacream.training.ios.pageflow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2EE354841F289454006F323F /* org.javacream.training.ios.pageflowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EE3549C1F289454006F323F /* Build configuration list for PBXNativeTarget "org.javacream.training.ios.pageflowTests" */;
+			buildPhases = (
+				2EE354811F289454006F323F /* Sources */,
+				2EE354821F289454006F323F /* Frameworks */,
+				2EE354831F289454006F323F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EE354871F289454006F323F /* PBXTargetDependency */,
+			);
+			name = org.javacream.training.ios.pageflowTests;
+			productName = org.javacream.training.ios.pageflowTests;
+			productReference = 2EE354851F289454006F323F /* org.javacream.training.ios.pageflowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2EE3548F1F289454006F323F /* org.javacream.training.ios.pageflowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EE3549F1F289454006F323F /* Build configuration list for PBXNativeTarget "org.javacream.training.ios.pageflowUITests" */;
+			buildPhases = (
+				2EE3548C1F289454006F323F /* Sources */,
+				2EE3548D1F289454006F323F /* Frameworks */,
+				2EE3548E1F289454006F323F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EE354921F289454006F323F /* PBXTargetDependency */,
+			);
+			name = org.javacream.training.ios.pageflowUITests;
+			productName = org.javacream.training.ios.pageflowUITests;
+			productReference = 2EE354901F289454006F323F /* org.javacream.training.ios.pageflowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EE354691F289454006F323F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Javacream;
+				TargetAttributes = {
+					2EE354701F289454006F323F = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0940;
+						ProvisioningStyle = Automatic;
+					};
+					2EE354841F289454006F323F = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0940;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2EE354701F289454006F323F;
+					};
+					2EE3548F1F289454006F323F = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0940;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2EE354701F289454006F323F;
+					};
+				};
+			};
+			buildConfigurationList = 2EE3546C1F289454006F323F /* Build configuration list for PBXProject "org.javacream.training.ios.pageflow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EE354681F289454006F323F;
+			productRefGroup = 2EE354721F289454006F323F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EE354701F289454006F323F /* org.javacream.training.ios.pageflow */,
+				2EE354841F289454006F323F /* org.javacream.training.ios.pageflowTests */,
+				2EE3548F1F289454006F323F /* org.javacream.training.ios.pageflowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EE3546F1F289454006F323F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE3547F1F289454006F323F /* LaunchScreen.storyboard in Resources */,
+				2EE3547C1F289454006F323F /* Assets.xcassets in Resources */,
+				2EE3547A1F289454006F323F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EE354831F289454006F323F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EE3548E1F289454006F323F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EE3546D1F289454006F323F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE354751F289454006F323F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EE354811F289454006F323F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE3548A1F289454006F323F /* org_javacream_training_ios_pageflowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EE3548C1F289454006F323F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE354951F289454006F323F /* org_javacream_training_ios_pageflowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2EE354871F289454006F323F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EE354701F289454006F323F /* org.javacream.training.ios.pageflow */;
+			targetProxy = 2EE354861F289454006F323F /* PBXContainerItemProxy */;
+		};
+		2EE354921F289454006F323F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EE354701F289454006F323F /* org.javacream.training.ios.pageflow */;
+			targetProxy = 2EE354911F289454006F323F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2EE354781F289454006F323F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EE354791F289454006F323F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2EE3547D1F289454006F323F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EE3547E1F289454006F323F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EE354971F289454006F323F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2EE354981F289454006F323F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EE3549A1F289454006F323F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = org.javacream.training.ios.pageflow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.javacream.org-javacream-training-ios-pageflow";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		2EE3549B1F289454006F323F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = org.javacream.training.ios.pageflow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.javacream.org-javacream-training-ios-pageflow";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		2EE3549D1F289454006F323F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = org.javacream.training.ios.pageflowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.javacream.org-javacream-training-ios-pageflowTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/org.javacream.training.ios.pageflow.app/org.javacream.training.ios.pageflow";
+			};
+			name = Debug;
+		};
+		2EE3549E1F289454006F323F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = org.javacream.training.ios.pageflowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.javacream.org-javacream-training-ios-pageflowTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/org.javacream.training.ios.pageflow.app/org.javacream.training.ios.pageflow";
+			};
+			name = Release;
+		};
+		2EE354A01F289454006F323F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = org.javacream.training.ios.pageflowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.javacream.org-javacream-training-ios-pageflowUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = org.javacream.training.ios.pageflow;
+			};
+			name = Debug;
+		};
+		2EE354A11F289454006F323F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = org.javacream.training.ios.pageflowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.javacream.org-javacream-training-ios-pageflowUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = org.javacream.training.ios.pageflow;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EE3546C1F289454006F323F /* Build configuration list for PBXProject "org.javacream.training.ios.pageflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EE354971F289454006F323F /* Debug */,
+				2EE354981F289454006F323F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EE354991F289454006F323F /* Build configuration list for PBXNativeTarget "org.javacream.training.ios.pageflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EE3549A1F289454006F323F /* Debug */,
+				2EE3549B1F289454006F323F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EE3549C1F289454006F323F /* Build configuration list for PBXNativeTarget "org.javacream.training.ios.pageflowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EE3549D1F289454006F323F /* Debug */,
+				2EE3549E1F289454006F323F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EE3549F1F289454006F323F /* Build configuration list for PBXNativeTarget "org.javacream.training.ios.pageflowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EE354A01F289454006F323F /* Debug */,
+				2EE354A11F289454006F323F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EE354691F289454006F323F /* Project object */;
+}

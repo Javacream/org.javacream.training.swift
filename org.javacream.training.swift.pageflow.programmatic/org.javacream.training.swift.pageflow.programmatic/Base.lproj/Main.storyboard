@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Main" customClass="ViewController" customModule="org_javacream_training_swift_pageflow_programmatic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOb-qz-dyD" userLabel="PingPongView">
+                                <rect key="frame" x="16" y="41" width="343" height="155"/>
+                                <color key="backgroundColor" red="0.16112066117395085" green="0.36080431403052649" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="6WP-P7-5Gw" userLabel="Buttons Stack">
+                                <rect key="frame" x="154" y="594" width="117" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aj-Vn-ku2">
+                                        <rect key="frame" x="0.0" y="0.0" width="31" height="30"/>
+                                        <state key="normal" title="Ping"/>
+                                        <connections>
+                                            <action selector="doShowPing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PrE-nH-FvZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfb-t6-MIE">
+                                        <rect key="frame" x="81" y="0.0" width="36" height="30"/>
+                                        <state key="normal" title="Pong"/>
+                                        <connections>
+                                            <action selector="doShowPong:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c3i-fT-HQq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6WP-P7-5Gw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154" id="9KZ-We-LVc"/>
+                            <constraint firstItem="iOb-qz-dyD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="BR6-PA-BL7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6WP-P7-5Gw" secondAttribute="bottom" constant="43" id="GdP-FS-Kok"/>
+                            <constraint firstItem="iOb-qz-dyD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="aNK-sQ-GkQ"/>
+                            <constraint firstAttribute="bottom" secondItem="iOb-qz-dyD" secondAttribute="bottom" constant="471" id="bbs-WW-fXU"/>
+                            <constraint firstItem="iOb-qz-dyD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="bum-ZD-v6M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pingSubView" destination="H29-7a-OL5" id="f7x-S8-Hti"/>
+                        <outlet property="pingpongView" destination="iOb-qz-dyD" id="Ate-YA-JZc"/>
+                        <outlet property="pongSubView" destination="qzU-a4-R6X" id="6aR-VH-FIN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="H29-7a-OL5" userLabel="Ping">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="128"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyS-fN-CHS">
+                            <rect key="frame" x="133" y="54" width="34" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.41051592291535777" blue="0.3789308162690409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="CyS-fN-CHS" firstAttribute="centerY" secondItem="H29-7a-OL5" secondAttribute="centerY" id="Wei-Em-rNs"/>
+                        <constraint firstItem="CyS-fN-CHS" firstAttribute="centerX" secondItem="H29-7a-OL5" secondAttribute="centerX" id="p7Q-mg-LJz"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="PF3-sR-WUR"/>
+                </view>
+                <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="qzU-a4-R6X" userLabel="Pong">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="128"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pong" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKE-nD-AOc">
+                            <rect key="frame" x="130" y="54" width="40" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.32154727905373015" green="1" blue="0.34243911744881539" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="dKE-nD-AOc" firstAttribute="centerY" secondItem="qzU-a4-R6X" secondAttribute="centerY" id="0wT-6t-zqQ"/>
+                        <constraint firstItem="dKE-nD-AOc" firstAttribute="centerX" secondItem="qzU-a4-R6X" secondAttribute="centerX" id="qhd-do-AoD"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="bbh-pF-r5d"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
