@@ -84,6 +84,8 @@ class PeopleModel{
     }
     
     func searchPeopleByLastname(lastname: String) -> Array<String>{
+        //Simulation einer Netzwerk-Latenz
+        sleep(3)
         return people.filter({(person) in person.lastname.contains(lastname)}).map({(person) in "\(person.firstname) \(person.lastname)"})
         
     }

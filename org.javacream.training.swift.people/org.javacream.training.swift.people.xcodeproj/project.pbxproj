@@ -16,6 +16,7 @@
 		18EFF01E21491B6F00DCF945 /* PeopleModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFF01D21491B6F00DCF945 /* PeopleModelTests.swift */; };
 		18EFF0C0214A62CE00DCF945 /* SearchPersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFF0BF214A62CE00DCF945 /* SearchPersonController.swift */; };
 		18EFF0C2214A685D00DCF945 /* PeopleApplicationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFF0C1214A685D00DCF945 /* PeopleApplicationContext.swift */; };
+		18EFF0C4214A7DBE00DCF945 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFF0C3214A7DBE00DCF945 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		18EFF01D21491B6F00DCF945 /* PeopleModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleModelTests.swift; sourceTree = "<group>"; };
 		18EFF0BF214A62CE00DCF945 /* SearchPersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPersonController.swift; sourceTree = "<group>"; };
 		18EFF0C1214A685D00DCF945 /* PeopleApplicationContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleApplicationContext.swift; sourceTree = "<group>"; };
+		18EFF0C3214A7DBE00DCF945 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		186F9D062147BB0900392CEA /* org.javacream.training.swift.people */ = {
 			isa = PBXGroup;
 			children = (
+				18EFF0C3214A7DBE00DCF945 /* Utility.swift */,
 				18EFF0C1214A685D00DCF945 /* PeopleApplicationContext.swift */,
 				18EFF0BF214A62CE00DCF945 /* SearchPersonController.swift */,
 				18EFEFFB2147E9FC00DCF945 /* PeopleModel.swift */,
@@ -208,6 +211,7 @@
 			files = (
 				18EFF0C0214A62CE00DCF945 /* SearchPersonController.swift in Sources */,
 				186F9D0A2147BB0900392CEA /* CreatePersonController.swift in Sources */,
+				18EFF0C4214A7DBE00DCF945 /* Utility.swift in Sources */,
 				18EFEFFC2147E9FC00DCF945 /* PeopleModel.swift in Sources */,
 				18EFF0C2214A685D00DCF945 /* PeopleApplicationContext.swift in Sources */,
 				186F9D082147BB0900392CEA /* AppDelegate.swift in Sources */,
