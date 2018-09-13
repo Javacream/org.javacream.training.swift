@@ -24,7 +24,21 @@ class PeopleModelTests: XCTestCase {
         peopleModel = PeopleModel()
     }
     
-    
+    func testSearchPerson(){
+        try! peopleModel.savePerson(lastname: PeopleModelTests.VALID_LASTNAME, firstname: PeopleModelTests.VALID_FIRSTNAME, height: PeopleModelTests.VALID_HEIGHT)
+
+        let found = peopleModel.searchPeopleByLastname(lastname: PeopleModelTests.VALID_LASTNAME)
+        XCTAssertTrue(found.count == 1)
+        try! peopleModel.savePerson(lastname: PeopleModelTests.VALID_LASTNAME, firstname: PeopleModelTests.VALID_FIRSTNAME, height: PeopleModelTests.VALID_HEIGHT)
+        let found2 = peopleModel.searchPeopleByLastname(lastname: "Lastname")
+        XCTAssertTrue(found2.count == 2)
+    }
+    func testSearchPersonNotFound(){
+        try! peopleModel.savePerson(lastname: PeopleModelTests.VALID_LASTNAME, firstname: PeopleModelTests.VALID_FIRSTNAME, height: PeopleModelTests.VALID_HEIGHT)
+        
+        let found = peopleModel.searchPeopleByLastname(lastname: "NO_LASTNAME")
+        XCTAssertTrue(found.count == 0)
+    }
     func testSavePerson() {
         
         try! peopleModel.savePerson(lastname: PeopleModelTests.VALID_LASTNAME, firstname: PeopleModelTests.VALID_FIRSTNAME, height: PeopleModelTests.VALID_HEIGHT)

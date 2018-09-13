@@ -8,16 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CreatePersonController: UIViewController {
 
     @IBOutlet weak var LastnameInput: UITextField!
     @IBOutlet weak var FirstnameInput: UITextField!
     @IBOutlet weak var HeightInput: UITextField!
     
-    var peopleModel:PeopleModel!
     override func viewDidLoad() {
         super.viewDidLoad()
-         peopleModel = PeopleModel()
+         //peopleModel = PeopleModel()
+        
     }
 
     
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         let height = HeightInput.text!
         if let intHeight = Int(height){
             do {
-                try peopleModel.savePerson(lastname: lastname, firstname: firstname, height: intHeight)
+                try PeopleApplicationContext.peopleModel.savePerson(lastname: lastname, firstname: firstname, height: intHeight)
             }
             catch PeopleModelErrorEnum.save (let errorMessage){
                 print("error saving person: \(errorMessage)")

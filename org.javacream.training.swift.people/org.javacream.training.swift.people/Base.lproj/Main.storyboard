@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5RN-OQ-7C7">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,26 +11,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Create Person-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="org_javacream_training_swift_people" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Create Person" customClass="CreatePersonController" customModule="org_javacream_training_swift_people" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jbn-G3-PPk">
-                                <rect key="frame" x="16" y="615" width="343" height="52"/>
+                                <rect key="frame" x="16" y="615" width="343" height="3"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmJ-PM-Vkx">
-                                        <rect key="frame" x="0.0" y="0.0" width="172" height="52"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="3"/>
                                         <state key="normal" title="Save"/>
                                         <connections>
                                             <action selector="doSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5x9-8O-eSB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkR-cT-yyk">
-                                        <rect key="frame" x="172" y="0.0" width="171" height="52"/>
+                                        <rect key="frame" x="171.5" y="0.0" width="171.5" height="3"/>
                                         <state key="normal" title="Reset"/>
                                         <connections>
                                             <action selector="doReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kvb-m3-rrQ"/>
@@ -118,6 +118,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Create" id="hRB-7f-5E5"/>
                     <connections>
                         <outlet property="FirstnameInput" destination="3qF-gG-pYz" id="Kmx-sx-qf7"/>
                         <outlet property="HeightInput" destination="5eH-Qm-P3h" id="hEd-2z-zVF"/>
@@ -125,6 +126,88 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="117.39130434782609"/>
+        </scene>
+        <!--Search Person-->
+        <scene sceneID="ESb-1j-VJH">
+            <objects>
+                <viewController id="DRC-gQ-P7y" userLabel="Search Person" customClass="SearchPersonController" customModule="org_javacream_training_swift_people" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dw5-vG-5Qc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Lastname Filter:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHH-BM-msn" userLabel="LastnameInputLabel">
+                                <rect key="frame" x="16" y="110" width="167" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGu-3m-XeC" userLabel="Output">
+                                <rect key="frame" x="16" y="264" width="343" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="DaG-R5-Lkv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igP-Q2-Fn6">
+                                <rect key="frame" x="126" y="192" width="141" height="30"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="doSearchPeopleByLastname:" destination="DRC-gQ-P7y" eventType="touchUpInside" id="dCe-0R-bmJ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qco-Zx-oAF" userLabel="LastnameInput">
+                                <rect key="frame" x="212" y="101" width="147" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qco-Zx-oAF" firstAttribute="trailing" secondItem="dw5-vG-5Qc" secondAttribute="trailingMargin" id="Cry-xD-cOA"/>
+                            <constraint firstItem="zGu-3m-XeC" firstAttribute="top" secondItem="igP-Q2-Fn6" secondAttribute="bottom" constant="42" id="E3T-X2-RPG"/>
+                            <constraint firstItem="zGu-3m-XeC" firstAttribute="leading" secondItem="QHH-BM-msn" secondAttribute="leading" id="OIq-Lb-K89"/>
+                            <constraint firstItem="4Xk-r1-NCp" firstAttribute="trailing" secondItem="igP-Q2-Fn6" secondAttribute="trailing" constant="108" id="Qdm-TI-PEi"/>
+                            <constraint firstItem="QHH-BM-msn" firstAttribute="leading" secondItem="dw5-vG-5Qc" secondAttribute="leadingMargin" id="QpQ-wU-oT3"/>
+                            <constraint firstItem="qco-Zx-oAF" firstAttribute="top" secondItem="4Xk-r1-NCp" secondAttribute="top" constant="81" id="ZBi-x4-oZQ"/>
+                            <constraint firstItem="qco-Zx-oAF" firstAttribute="leading" secondItem="QHH-BM-msn" secondAttribute="trailing" constant="29" id="cEE-Ux-sAi"/>
+                            <constraint firstItem="igP-Q2-Fn6" firstAttribute="leading" secondItem="4Xk-r1-NCp" secondAttribute="leading" constant="126" id="eCc-fJ-V2N"/>
+                            <constraint firstItem="QHH-BM-msn" firstAttribute="bottom" secondItem="qco-Zx-oAF" secondAttribute="bottom" id="hvl-rC-MZg"/>
+                            <constraint firstItem="zGu-3m-XeC" firstAttribute="trailing" secondItem="qco-Zx-oAF" secondAttribute="trailing" id="qYr-UG-qi1"/>
+                            <constraint firstItem="igP-Q2-Fn6" firstAttribute="top" secondItem="qco-Zx-oAF" secondAttribute="bottom" constant="61" id="wKq-7f-cpx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Xk-r1-NCp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" id="Rog-Ig-vpQ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="lastnameInput" destination="qco-Zx-oAF" id="oTV-Ab-Lia"/>
+                        <outlet property="outputLabel" destination="zGu-3m-XeC" id="tQk-Et-eXG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SaL-xU-JTD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.4000000000001" y="814.54272863568224"/>
+        </scene>
+        <!--People Tab-->
+        <scene sceneID="YIw-4g-k7b">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5RN-OQ-7C7" userLabel="People Tab" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5sk-7l-qKs">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="f1P-RO-5hB"/>
+                        <segue destination="DRC-gQ-P7y" kind="relationship" relationship="viewControllers" id="W0I-jy-RSi"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xwk-lQ-jgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>

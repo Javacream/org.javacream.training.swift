@@ -65,6 +65,13 @@ class PeopleModelErrorClass:Error {
 class PeopleModel{
     private let heightRange = 25...250
     var people: Array<Person> = []
+    
+    init(){
+        people.append(Person(lastname: "Sawitzki", firstname: "Rainer", height: 183))
+        people.append(Person(lastname: "Sawitzki", firstname: "Klaus", height: 183))
+        people.append(Person(lastname: "Muster", firstname: "Rainer", height: 183))
+
+    }
     @discardableResult func savePerson(lastname:String, firstname:String, height: Int) throws -> Person {
         if (lastname.count < 2 || firstname.count < 2 || !heightRange.contains(height)){
             //throw PeopleModelErrorClass(description: "illegal parameters: lastname=\(lastname), firstname=\(firstname), height=\(height)")
@@ -76,5 +83,10 @@ class PeopleModel{
         }
     }
     
-    
+    func searchPeopleByLastname(lastname: String) -> Array<String>{
+        return people.filter({(person) in person.lastname.contains(lastname)}).map({(person) in "\(person.firstname) \(person.lastname)"})
+        
+    }
 }
+
+
