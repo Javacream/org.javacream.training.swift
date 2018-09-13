@@ -35,8 +35,6 @@ class Person{
     }
     var lastname:String {
         get {
-            
-            print ("getting lastname")
             return _lastname
         }
         

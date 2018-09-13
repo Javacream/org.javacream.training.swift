@@ -36,20 +36,19 @@ class CreatePersonController: UIViewController {
         let firstname = FirstnameInput.text!
         let height = HeightInput.text!
         if let intHeight = Int(height){
-            do {
-                try PeopleApplicationContext.peopleModel.savePerson(lastname: lastname, firstname: firstname, height: intHeight)
-            }
-            catch PeopleModelErrorEnum.save (let errorMessage){
-                print("error saving person: \(errorMessage)")
-            }
-            catch let errorMessage {
-                print("unknown error saving person: \(errorMessage)")
-            }
+            PeopleApplicationContext.peopleController.asyncSavePerson(lastname: lastname, firstname: firstname, height: intHeight, update: doSaveUpdate, error: doSaveError)
             
         }else{
             print("non parsable height input")
         }
     }
     
+    func doSaveUpdate(person:Person) -> Void{
+        print("finished saving with result \(person.sayHello())")
+    }
+    func doSaveError(error:Error) -> Void{
+        print("finished saving with error \(error)")
+    }
+
 }
 

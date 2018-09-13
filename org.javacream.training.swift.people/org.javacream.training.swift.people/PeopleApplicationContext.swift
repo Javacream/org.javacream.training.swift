@@ -9,6 +9,13 @@
 import Foundation
 
 class PeopleApplicationContext{
-    static let peopleModel = PeopleModel()
+    static var peopleModel: PeopleModel!
+    static var peopleController: PeopleController!
+
+    static func initContext(){
+        peopleModel = PeopleModel()
+        peopleController = PeopleController()
+        peopleController.peopleModel = peopleModel
+}
     
 }

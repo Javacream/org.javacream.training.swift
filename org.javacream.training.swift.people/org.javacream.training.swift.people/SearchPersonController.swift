@@ -15,19 +15,18 @@ class SearchPersonController: UIViewController {
     
     @IBAction func doSearchPeopleByLastname(_ sender: Any) {
         let lastname = lastnameInput.text!
-        let people = peopleModel.searchPeopleByLastname(lastname: lastname)
+        PeopleApplicationContext.peopleController.asyncSearchPeopleByLastname(lastname: lastname, update: doSearchPeopleByLastnameUpdate)
+        
+    }
+    
+    func doSearchPeopleByLastnameUpdate(people: Array<String>){
         let peopleNames = people.reduce("", {(result, name) in "\(result) \(name) \n"})
         outputLabel.text = peopleNames
         
     }
-    var peopleModel:PeopleModel!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        peopleModel = PeopleApplicationContext.peopleModel
-    }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
 }
