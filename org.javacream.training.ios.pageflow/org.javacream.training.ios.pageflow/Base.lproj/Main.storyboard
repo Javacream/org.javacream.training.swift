@@ -12,7 +12,7 @@
         <!--Start-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Start" customClass="ViewController" customModule="org_javacream_training_ios_pageflow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Start" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -34,6 +34,14 @@
                                 <state key="normal" title="Ping"/>
                                 <connections>
                                     <segue destination="9hL-p5-Ojy" kind="show" id="0pd-Pq-n37"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhT-01-dCk">
+                                <rect key="frame" x="163" y="318" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="End"/>
+                                <connections>
+                                    <segue destination="xWJ-yV-rBM" kind="show" id="Dk1-W5-IcP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OBf-bu-thm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="567" y="8"/>
+            <point key="canvasLocation" x="818" y="726"/>
         </scene>
         <!--Pong-->
         <scene sceneID="oBh-wg-PmT">
@@ -128,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XhJ-Se-Mo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1385" y="-1105"/>
+            <point key="canvasLocation" x="1114" y="-1804"/>
         </scene>
         <!--End-->
         <scene sceneID="7Ip-qa-WsR">
@@ -167,8 +175,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="aaH-4a-JsE"/>
-        <segue reference="iqk-Pw-BHi"/>
+        <segue reference="bOj-qU-pTH"/>
         <segue reference="aT5-PX-50E"/>
     </inferredMetricsTieBreakers>
 </document>
