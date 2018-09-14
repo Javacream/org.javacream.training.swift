@@ -30,13 +30,15 @@ class CreatePersonController: UIViewController {
         FirstnameInput.text = ""
         HeightInput.text = ""
     }
+    @IBOutlet weak var GenderInput: UITextField!
     
     @IBAction func doSave(_ sender: Any) {
         let lastname = LastnameInput.text!
         let firstname = FirstnameInput.text!
         let height = HeightInput.text!
+        let gender = GenderInput.text!
         if let intHeight = Int(height){
-            PeopleApplicationContext.peopleController.asyncSavePerson(lastname: lastname, firstname: firstname, height: intHeight, update: doSaveUpdate, error: doSaveError)
+            PeopleApplicationContext.peopleController.asyncSavePerson(lastname: lastname, firstname: firstname, height: intHeight, gender: gender, update: doSaveUpdate, error: doSaveError)
             
         }else{
             print("non parsable height input")

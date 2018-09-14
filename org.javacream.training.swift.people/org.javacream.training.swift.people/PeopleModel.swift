@@ -8,16 +8,30 @@
 
 import Foundation
 
-class Person{
+class Person : NSObject, NSCoding{
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(lastname, forKey: "lastname")
+        aCoder.encode(firstname, forKey: "firstname")
+        aCoder.encode(gender, forKey: "gender")
+        aCoder.encode(height, forKey: "height")
+    }
+    convenience required init?(coder aDecoder: NSCoder) {
+        let lastname = aDecoder.decodeObject(forKey: "lastname") as! String
+        let firstname = aDecoder.decodeObject(forKey: "firstname") as! String
+        let gender = aDecoder.decodeObject(forKey: "gender") as! String
+        let height = aDecoder.decodeInteger(forKey: "height")
+        self.init(lastname: lastname, firstname: firstname, height: height, gender: gender)
+    }
     static let numberOfEyes = 2
     private var _lastname:String
     let firstname: String
+    let gender: String
     var _height: Int
-    init(lastname:String, firstname: String, height:Int){
+    init(lastname:String, firstname: String, height:Int, gender:String = "m"){
         self._lastname = lastname
         self.firstname = firstname
         self._height = height
-        
+        self.gender = gender
     }
     
     var height: Int{
@@ -65,9 +79,14 @@ class PeopleModel{
     var people: Array<Person> = []
     
     init(){
-        people.append(Person(lastname: "Sawitzki", firstname: "Rainer", height: 183))
-        people.append(Person(lastname: "Sawitzki", firstname: "Klaus", height: 183))
-        people.append(Person(lastname: "Muster", firstname: "Rainer", height: 183))
+        
+        if let read = NSKeyedUnarchiver.unarchiveObject(withFile: getFullPath(filename: "people").absoluteString) as! Array<Person>?{
+            people = read
+        }else{
+            people.append(Person(lastname: "Sawitzki", firstname: "Rainer", height: 183))
+            people.append(Person(lastname: "Sawitzki", firstname: "Klaus", height: 183))
+            people.append(Person(lastname: "Muster", firstname: "Rainer", height: 183))
+        }
 
     }
     @discardableResult func savePerson(lastname:String, firstname:String, height: Int) throws -> Person {
@@ -77,6 +96,12 @@ class PeopleModel{
         }else{
             let p = Person(lastname: lastname, firstname: firstname, height: height)
             people.append(p)
+            do {
+                try createSaveableData(object: people).write(to: getFullPath(filename: "people"))
+            } catch {
+                print("Couldn't write file")
+            }
+            
             return p
         }
     }

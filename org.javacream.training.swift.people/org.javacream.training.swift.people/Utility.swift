@@ -25,3 +25,16 @@ func ->>- <R> (background: @escaping () throws -> R, callback: (update: (_: R) -
         }
     }
 }
+
+func getDocumentsDirectory() -> URL {
+    let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+    return paths[0]
+}
+
+func getFullPath(filename:String) -> URL {
+    return getDocumentsDirectory().appendingPathComponent(filename)
+}
+
+func createSaveableData(object: Any) -> Data{
+    return NSKeyedArchiver.archivedData(withRootObject: object)
+}
