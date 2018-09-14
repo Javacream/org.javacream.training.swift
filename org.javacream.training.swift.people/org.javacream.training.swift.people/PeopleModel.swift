@@ -97,7 +97,15 @@ class PeopleModel{
             let p = Person(lastname: lastname, firstname: firstname, height: height)
             people.append(p)
             do {
-                try createSaveableData(object: people).write(to: getFullPath(filename: "people"))
+                let path = getFullPath(filename: "people")
+                let data = createSaveableData(object: people)
+                try data.write(to: path)
+                let pathAsString = path.absoluteString
+                let readData = NSKeyedUnarchiver.unarchiveObject(withFile: pathAsString)
+                if let read =  readData as! Array<Person>?{
+                    people = read
+                }
+                
             } catch {
                 print("Couldn't write file")
             }
