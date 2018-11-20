@@ -81,7 +81,7 @@
                                     <action selector="dumpAction:" destination="HHG-8o-KFI" eventType="touchUpInside" id="8tU-AT-PQ9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfg-W7-4Gg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfg-W7-4Gg">
                                 <rect key="frame" x="16" y="83" width="343" height="526"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="526" id="zjn-iT-k7j"/>
