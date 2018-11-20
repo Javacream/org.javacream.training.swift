@@ -37,13 +37,12 @@ class PeopleModel{
     }
     
     static func dump() -> String{
-        var result = ""
-        for id in people.keys{
-            result = result + ", \(people[id]!.info())"
-        }
-        return result
         
+            var stringResult = ""
+            people.map({(key, value) in value}).filter({(p) in p.height > 150}).sorted(by: {(p1, p2) in p1.lastname < p2.lastname}).forEach({(person) in stringResult = stringResult + person.info()})
+            return stringResult
     }
+    
 
     static func search(id:Int) -> Person?{
         return people[id]
