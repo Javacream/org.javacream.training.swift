@@ -32,7 +32,7 @@ class SaveViewController: UIViewController {
         let firstname = firstnameInput.text!
         let height = Int(heightInput.text!)!
         func saveUpdate(id: Int) -> Void{
-            //Erst mal leer
+            showConfirmDialog(message: "GeneratedId: \(id)", viewController: self)
         }
         
         peopleController.save(lastname: lastname, firstname: firstname, height: height, update: saveUpdate)

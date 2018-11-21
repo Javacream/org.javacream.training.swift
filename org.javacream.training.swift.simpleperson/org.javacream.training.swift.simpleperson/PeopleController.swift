@@ -10,24 +10,37 @@ import Foundation
 
 class PeopleController{
     
-    func save(lastname:String, firstname:String, height:Int, update: (Int) -> Void) -> Void{
+    func save(lastname:String, firstname:String, height:Int, update: @escaping (Int) -> Void) -> Void{
+        func longRunning() -> Int{
             let generatedId = PeopleModel.save(lastname: lastname, firstname: firstname, height: height)
-        update(generatedId)
+            return generatedId
+        }
+        longRunning ->- update
     }
     
-    func dump(update: (String) -> Void) -> Void{
+    func dump(update: @escaping (String) -> Void) -> Void{
+        func longRunningDump() -> String{
         let stringResult = PeopleModel.dump()
-        update(stringResult)
+            return stringResult
+        }
+        longRunningDump ->- update
     }
     
     
-    func search(id:Int, update: (Person?) -> Void) -> Void{
-        let result = PeopleModel.search(id: id)
-        update(result)
+    func search(id:Int, update: @escaping (Person?) -> Void) -> Void{
+        func longRunningSearch() -> Person?{
+            let result = PeopleModel.search(id: id)
+            return result
+        }
+        
+        longRunningSearch ->- update
     }
     
-    func deleteById(id: Int, update: (Bool) -> Void){
-        let isDeleted = PeopleModel.deleteById(id: id)
-        update(isDeleted)
+    func deleteById(id: Int, update: @escaping (Bool) -> Void){
+        func f () ->Bool{
+            let isDeleted = PeopleModel.deleteById(id: id)
+            return isDeleted
+        }
+        f ->- update
     }
 }
