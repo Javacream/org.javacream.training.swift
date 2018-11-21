@@ -29,11 +29,15 @@ class PeopleModel{
     static var people:Dictionary<Int, Person> = Dictionary()
     
     private static var counter = 0;
-    static func save(lastname:String, firstname:String, height:Int){
+    static func save(lastname:String, firstname:String, height:Int) -> Int{
             counter = counter + 1
             let id = counter
             let person = Person(id: id, lastname: lastname, firstname: firstname, height: height)
         people[id] = person
+        sleep(5) //Simulation einer Netzwerk-Latenz
+        
+        return id
+    
     }
     
     static func dump() -> String{
@@ -47,4 +51,17 @@ class PeopleModel{
     static func search(id:Int) -> Person?{
         return people[id]
     }
+    
+    //NEU: Person löschen By Id
+    
+    static func deleteById(id: Int) ->Bool{
+        let optionalPerson = people.removeValue(forKey: id)
+        if let x = optionalPerson {
+            return true
+        }else{
+            return false
+        }
+        
+    }
+    
 }

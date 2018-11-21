@@ -10,7 +10,7 @@ import UIKit
 
 class SaveViewController: UIViewController {
 
-
+    let peopleController = PeopleController()
     @IBOutlet weak var heightInput: UITextField!
     @IBOutlet weak var lastnameInput: UITextField!
     @IBOutlet weak var firstnameInput: UITextField!
@@ -27,10 +27,15 @@ class SaveViewController: UIViewController {
         lastnameInput.text = ""
     }
     @IBAction func saveAction(_ sender: Any) {
+        
         let lastname = lastnameInput.text!
         let firstname = firstnameInput.text!
         let height = Int(heightInput.text!)!
-        PeopleModel.save(lastname: lastname, firstname: firstname, height: height)
+        func saveUpdate(id: Int) -> Void{
+            //Erst mal leer
+        }
+        
+        peopleController.save(lastname: lastname, firstname: firstname, height: height, update: saveUpdate)
     }
     
 }

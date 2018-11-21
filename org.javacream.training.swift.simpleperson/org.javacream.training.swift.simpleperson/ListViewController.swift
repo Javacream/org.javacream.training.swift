@@ -9,10 +9,19 @@
 import UIKit
 
 class ListViewController: UIViewController {
+    let peopleController = PeopleController()
     @IBAction func dumpAction(_ sender: Any) {
-        let people = PeopleModel.dump()
-        peopleListOutput.text = people
+        func dumpUpdate(people:String) -> Void{
+            peopleListOutput.text = people
+        }
+        //let people = PeopleModel.dump()
+        //peopleListOutput.text = people
+        peopleController.dump(update: dumpUpdate)
     }
+    
+    
+    
     @IBOutlet weak var peopleListOutput: UILabel!
+ 
     
 }

@@ -41,7 +41,7 @@ class PeopleController{
         func saveInternRest() -> Person{
             let p =  Person(lastname: lastname, firstname: firstname)
             people.append(p)
-            let url = URL(string: "http://10.44.4.229:9090/people")
+            let url = URL(string: "http://10.44.3.240:9090/people")
             var request = URLRequest(url: url!)
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
             request.httpMethod = "POST"
@@ -72,7 +72,7 @@ class PeopleController{
     static func load(loadUpdate: @escaping (Array<Person>) -> Void){
         func loadIntern() -> Array<Person>{
             var result = Array<Person>()
-            if let url = URL(string: "http://10.44.4.229:9090/people") {
+            if let url = URL(string: "http://10.44.3.240:9090/people") {
                 do {
                     let contents = try String(contentsOf: url)
                     let jsonArray = try JSONSerialization.jsonObject(with: contents.data(using: String.Encoding.utf8)!, options: [])

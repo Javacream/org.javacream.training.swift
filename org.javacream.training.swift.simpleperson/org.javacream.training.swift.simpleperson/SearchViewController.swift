@@ -11,14 +11,23 @@ import UIKit
 class SearchViewController: UIViewController {
 
     @IBOutlet weak var personResult: UILabel!
+    
     @IBAction func searchAction(_ sender: Any) {
         let id = Int(idInput.text!)!
-        let p = PeopleModel.search(id: id)
-        if let person = p {
-            personResult.text = person.info()
-        }else{
-            personResult.text = "\(id) not found"
+        func searchUpdate(p: Person?) -> Void{
+            if let person = p {
+                personResult.text = person.info()
+            }else{
+                personResult.text = "\(id) not found"
+            }
         }
+        peopleController.search(id: id, update: searchUpdate)
+
+
+
     }
+    
     @IBOutlet weak var idInput: UITextField!
+
+    let peopleController = PeopleController()
 }

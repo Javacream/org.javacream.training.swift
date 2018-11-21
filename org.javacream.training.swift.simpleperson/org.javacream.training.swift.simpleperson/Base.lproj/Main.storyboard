@@ -39,6 +39,14 @@
                                     <segue destination="HHG-8o-KFI" kind="show" id="35G-cE-2E3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9L-82-X7P">
+                                <rect key="frame" x="165" y="318" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <segue destination="k5p-3b-eC2" kind="show" id="Fe7-xu-TTc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -111,6 +119,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cCl-qR-aoQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-28" y="-1100.5997001499252"/>
+        </scene>
+        <!--Delete View Controller-->
+        <scene sceneID="1qa-HZ-Ynn">
+            <objects>
+                <viewController id="k5p-3b-eC2" userLabel="Delete View Controller" customClass="DeleteViewController" customModule="org_javacream_training_swift_simpleperson" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZL2-M1-dOB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="042-qg-Se3">
+                                <rect key="frame" x="165" y="318" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteAction:" destination="k5p-3b-eC2" eventType="touchUpInside" id="JgH-4I-bkt"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GKT-sz-9ql" userLabel="IdInput">
+                                <rect key="frame" x="139" y="175" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZE-56-Jqv">
+                                <rect key="frame" x="341" y="617" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="crL-EA-pIl" kind="show" id="x5g-RZ-fMe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LvQ-ot-nwf" firstAttribute="bottom" secondItem="042-qg-Se3" secondAttribute="bottom" constant="319" id="0bR-pH-ogN"/>
+                            <constraint firstItem="GKT-sz-9ql" firstAttribute="centerX" secondItem="042-qg-Se3" secondAttribute="centerX" id="7sh-nY-027"/>
+                            <constraint firstItem="042-qg-Se3" firstAttribute="centerY" secondItem="ZL2-M1-dOB" secondAttribute="centerY" id="Lta-LE-3Zj"/>
+                            <constraint firstItem="GKT-sz-9ql" firstAttribute="top" secondItem="LvQ-ot-nwf" secondAttribute="top" constant="155" id="Mfx-rC-qEK"/>
+                            <constraint firstAttribute="trailing" secondItem="wZE-56-Jqv" secondAttribute="trailing" id="VUg-Ox-MrD"/>
+                            <constraint firstItem="GKT-sz-9ql" firstAttribute="leading" secondItem="LvQ-ot-nwf" secondAttribute="leading" constant="139" id="bD3-M2-bFM"/>
+                            <constraint firstItem="GKT-sz-9ql" firstAttribute="centerX" secondItem="ZL2-M1-dOB" secondAttribute="centerX" id="fia-l6-2Pg"/>
+                            <constraint firstAttribute="bottom" secondItem="wZE-56-Jqv" secondAttribute="bottom" constant="20" symbolic="YES" id="lpr-ot-lKE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LvQ-ot-nwf"/>
+                    </view>
+                    <connections>
+                        <outlet property="idToDeleteInput" destination="GKT-sz-9ql" id="iNt-VL-eSw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nni-X9-Ska" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="465" y="-1260"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="jJR-3t-REV">
@@ -301,6 +359,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="EjE-rA-d64"/>
+        <segue reference="x5g-RZ-fMe"/>
     </inferredMetricsTieBreakers>
 </document>
