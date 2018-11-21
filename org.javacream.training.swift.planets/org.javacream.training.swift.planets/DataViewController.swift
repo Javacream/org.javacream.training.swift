@@ -33,11 +33,11 @@ class DataViewController: UIViewController {
 
     func externalImage(){
         self.dataLabel.text = dataObject
-        self.webView.loadHTMLString("<img src='http://10.16.2.226:8080/training/data/planets/\(dataObject).jpg'></img>" , baseURL: nil)
+        self.webView.loadHTMLString("<img src='http://10.44.3.240:8080/training/data/planets/\(dataObject).jpg'></img>" , baseURL: nil)
     }
     func externalHttp(){
         self.dataLabel.text = dataObject
-        let url = URL(string: "http://10.16.2.226:8080/training/planets/\(dataObject).html")
+        let url = URL(string: "http://10.44.3.240:8080/training/planets/\(dataObject).html")
         let urlRequest = URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
         self.webView.loadRequest(urlRequest)
         

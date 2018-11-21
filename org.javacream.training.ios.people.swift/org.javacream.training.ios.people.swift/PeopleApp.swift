@@ -63,7 +63,7 @@ class PeopleController{
     }
     static func dump(dumpUpdate: @escaping () -> Void) {
         func dumpIntern() -> Void{
-            sleep(5)
+            sleep(2)
             people.map({(p:Person) in return p.lastname}).forEach({(lastname) in print(lastname)})
         }
         dumpIntern ->- dumpUpdate
@@ -81,7 +81,6 @@ class PeopleController{
                         let personDictionary = jsonObject as! [String: Any]
                         let lastname = personDictionary["lastname"] as! String
                         let firstname = personDictionary["firstname"] as! String
-                        
                         result.append(Person(lastname: lastname, firstname: firstname))
                     }
                 } catch {
@@ -91,6 +90,7 @@ class PeopleController{
                 
                 print ("Bad URL")
             }
+            people = people + result
             return result
         }
         
