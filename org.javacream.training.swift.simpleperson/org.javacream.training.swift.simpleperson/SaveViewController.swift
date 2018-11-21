@@ -31,11 +31,14 @@ class SaveViewController: UIViewController {
         let lastname = lastnameInput.text!
         let firstname = firstnameInput.text!
         let height = Int(heightInput.text!)!
+        let sv = displaySpinner(onView: self.view)
         func saveUpdate(id: Int) -> Void{
             showConfirmDialog(message: "GeneratedId: \(id)", viewController: self)
+            removeSpinner(spinner: sv)
         }
         
         peopleController.save(lastname: lastname, firstname: firstname, height: height, update: saveUpdate)
+        
     }
     
 }

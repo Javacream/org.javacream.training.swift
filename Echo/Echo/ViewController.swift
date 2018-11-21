@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         func updateEchoLabel(echoedMessage: String) -> Void{
             echoOutput.text = echoedMessage
         }
-        echoController.echo(message: echoMessage, update: updateEchoLabel)
+        echoController.echo(message: echoMessage, hugo: updateEchoLabel)
     }
     @IBOutlet weak var echoOutput: UILabel!
     
