@@ -17,6 +17,7 @@
 		188F87BC21A43B7600B8D381 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F87BB21A43B7600B8D381 /* ListViewController.swift */; };
 		188F87BE21A54D2D00B8D381 /* PeopleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F87BD21A54D2D00B8D381 /* PeopleController.swift */; };
 		188F87C021A5551B00B8D381 /* DeleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F87BF21A5551B00B8D381 /* DeleteViewController.swift */; };
+		188F87C221A559AC00B8D381 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F87C121A559AC00B8D381 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		188F87BB21A43B7600B8D381 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		188F87BD21A54D2D00B8D381 /* PeopleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleController.swift; sourceTree = "<group>"; };
 		188F87BF21A5551B00B8D381 /* DeleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteViewController.swift; sourceTree = "<group>"; };
+		188F87C121A559AC00B8D381 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				188F87AC21A411BF00B8D381 /* LaunchScreen.storyboard */,
 				188F87AF21A411BF00B8D381 /* Info.plist */,
 				188F87BD21A54D2D00B8D381 /* PeopleController.swift */,
+				188F87C121A559AC00B8D381 /* Utilities.swift */,
 			);
 			path = org.javacream.training.swift.simpleperson;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				188F87BE21A54D2D00B8D381 /* PeopleController.swift in Sources */,
 				188F87BA21A43B6200B8D381 /* SearchViewController.swift in Sources */,
 				188F87BC21A43B7600B8D381 /* ListViewController.swift in Sources */,
+				188F87C221A559AC00B8D381 /* Utilities.swift in Sources */,
 				188F87A421A411BD00B8D381 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
